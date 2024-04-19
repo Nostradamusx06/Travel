@@ -1,6 +1,7 @@
 .page-body {
   min-width: $mobile-width;
   min-height: 100%;
+  font-family: $montserrat;
 
   @media (min-width: $tablet-width) {
     min-width: $tablet-width;

@@ -1,0 +1,266 @@
+.hero__swiper-slide {
+  position: relative;
+
+  max-width: fill-available;
+  min-height: 423.8px;
+  padding: 144.5px 0 0 40px;
+
+  &--second {
+    min-height: 433px;
+    padding-top: 134.5px;
+  }
+
+  &--third {
+    min-height: 433px;
+    padding-top: 121.5px;
+    padding-bottom: 3px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 692px;
+    padding: 342px 0 0 45px;
+
+    &--second {
+      min-height: 897px;
+      padding-top: 137px;
+    }
+
+    &--third {
+      padding-top: 342px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 520px;
+    padding: 200px 120px 80px;
+  }
+}
+
+.hero__background {
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  .hero__background-picture {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: $color-navy-blue;
+  }
+
+  .hero__background-img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+}
+
+.hero__info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  padding-right: 40px;
+
+  color: $color-default-white;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    align-items: normal;
+
+    padding: 0;
+  }
+
+  h1 {
+    font-size: $font-line-size-hippo;
+    font-weight: $extra-bold;
+    line-height: $font-line-size-hippo;
+
+    max-width: 290px;
+    margin: 0;
+    margin-bottom: 15px;
+
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      font-size: $font-line-size-blue-whale;
+      line-height: $font-line-size-blue-whale;
+
+      max-width: 678px;
+      margin-bottom: 13px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: $font-line-size-moon;
+      line-height: $font-line-size-moon;
+
+      max-width: 780px;
+      margin-bottom: 23px;
+
+      text-align: left;
+    }
+  }
+
+  p {
+    font-size: 15px;
+    font-weight: $regular;
+    line-height: $font-line-size-deer;
+
+    max-width: 290px;
+    margin: 0;
+    margin-bottom: 60px;
+
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      font-size: $font-line-size-dog;
+      line-height: $font-line-size-lion;
+
+      max-width: 500px;
+      margin-bottom: 37px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 420px;
+      margin-bottom: 37px;
+
+      text-align: left;
+    }
+  }
+}
+
+.hero__swiper-slide--third .hero__info h1 {
+  max-width: 925px;
+}
+
+.hero__swiper-slide--third .hero__info p {
+  max-width: 442px;
+}
+
+.hero__swiper-slide--second .hero__info p {
+  max-width: 460px;
+}
+
+.hero__button {
+  font-size: $font-line-size-fox;
+  font-weight: $medium;
+  line-height: $font-line-size-fox;
+
+  width: 140px;
+  padding: 21px 20px 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px;
+  }
+}
+
+.hero__description {
+  display: flex;
+
+  margin-top: 134px;
+
+  gap: 10px;
+}
+
+.hero__description-item {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-line-size-mouse;
+    font-weight: $regular;
+    line-height: $font-line-size-fox;
+
+    position: relative;
+
+    display: inline-block;
+
+    padding: 13px 19px 13px 39.5px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    &::before {
+      position: absolute;
+      z-index: 1;
+      top: 15px;
+      left: 19px;
+
+      width: 12px;
+      height: 12px;
+
+      content: "";
+
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--time {
+      &::before {
+        background-image: url("../../img/sprite/sprite.svg#moon");
+      }
+    }
+
+    &--complexity {
+      &::before {
+        background-image: url("../../img/sprite/sprite.svg#level");
+      }
+    }
+  }
+}
+
+.hero__swiper-pagination.swiper-pagination-horizontal.hero__swiper-pagination--right {
+  bottom: 40px;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+
+  gap: 12px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 92px;
+    left: 1216px;
+
+    justify-content: normal;
+
+    width: 150px;
+  }
+}
+
+.hero__swiper-pagination .swiper-pagination-bullet {
+  right: 30px;
+
+  width: 14px;
+  height: 14px;
+
+  opacity: 1;
+  border: 1px solid $color-default-white;
+  background-color: transparent;
+
+  gap: 11px;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.hero__swiper-pagination .swiper-pagination-bullet-active {
+  background-color: $color-default-white;
+}

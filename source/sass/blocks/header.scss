@@ -3,8 +3,6 @@
 }
 
 .header__container {
-  font-family: $montserrat;
-
   position: relative;
 
   min-height: 50px;
@@ -49,7 +47,6 @@
 }
 
 .header__phone-link {
-  font-family: $montserrat;
   font-size: $font-line-size-rat;
   font-weight: $semi-bold;
   line-height: $font-line-size-rabbit;
