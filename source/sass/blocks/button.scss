@@ -1,0 +1,46 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+
+  padding: 20px;
+
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+  word-break: break-word;
+
+  color: $color-default-white;
+  border: none;
+  outline-offset: 3px;
+  background-color: $color-navy-blue;
+
+  &:hover {
+    color: $color-resolution-blue;
+    border: 2px solid $color-resolution-blue;
+    padding: 18px;
+    background-color: $color-default-white;
+  }
+
+  &:focus {
+    color: $color-resolution-blue;
+    outline: none;
+    background-color: $color-default-white;
+  }
+
+  &:active {
+    color: $color-default-white;
+    background-color: $color-resolution-blue;
+  }
+
+  &--disabled {
+    pointer-events: none;
+
+    color: $color-default-white;
+    background-color: $color-nobel;
+
+    &:focus {
+      color: $color-default-white;
+      background-color: $color-nobel;
+    }
+  }
+}

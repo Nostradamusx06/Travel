@@ -1,6 +1,6 @@
 @font-face {
   font-style: normal;
-  font-weight: 800;
+  font-weight: $extra-bold;
   font-family: "Montserrat";
 
   font-display: swap;
@@ -9,25 +9,17 @@
 
 @font-face {
   font-style: normal;
-  font-weight: 700;
+  font-weight: $bold;
   font-family: "Montserrat";
 
   font-display: swap;
   src: url("../fonts/Montserrat-VariableFont_wght.woff2") format("woff2");
 }
 
-@font-face {
-  font-style: normal;
-  font-weight: 700;
-  font-family: "Montserrat";
-
-  font-display: swap;
-  src: url("../fonts/Montserrat-VariableFont_wght.woff2") format("woff2");
-}
 
 @font-face {
   font-style: normal;
-  font-weight: 600;
+  font-weight: $semi-bold;
   font-family: "Montserrat";
 
   font-display: swap;
