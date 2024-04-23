@@ -38,7 +38,6 @@
 
     @media (min-width: $desktop-width) {
       bottom: -681px;
-
       background-image: image-set(url("../img/tours/background-clouds-desktop@1x.webp") type("image/webp") 1x, url("../img/tours/background-clouds-desktop@2x.webp") type("image/webp") 2x, url("../img/tours/background-clouds-desktop@1x.png") 1x, url("../img/tours/background-clouds-desktop@2x.png") 2x,);
     }
   }
@@ -173,57 +172,29 @@
 }
 
 .tours__header-small {
-  font-size: $font-line-size-bear;
-  font-weight: $extra-bold;
-  line-height: $font-line-size-bear;
-
-  margin: 0;
   padding-top: 18px;
   padding-bottom: 40px;
 
-  color: $color-elephant;
-
   @media (min-width: $tablet-width) {
-    font-size: $font-line-size-alligator;
-    line-height: $font-line-size-alligator;
-
     padding-top: 20px;
     padding-bottom: 35px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: $font-line-size-anaconda;
-    line-height: $font-line-size-anaconda;
-
     padding-top: 23px;
     padding-bottom: 50px;
   }
 }
 
 .tours__header-big {
-  font-size: $font-line-size-hippo;
-  font-weight: $extra-bold;
-  line-height: $font-line-size-hippo;
-
   position: absolute;
   top: 23px;
 
-  margin: 0;
-
-  opacity: 0.03;
-  color: $color-elephant;
-
   @media (min-width: $tablet-width) {
-    font-size: $font-line-size-giraffe;
-    line-height: $font-line-size-giraffe;
-
     top: 106px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: $font-line-size-grampus;
-    line-height: $font-line-size-grampus;
-
     top: 106px;
   }
 }
@@ -382,7 +353,7 @@
   margin: 0;
   padding-bottom: 4px;
 
-  &--three-stars::after {
+  &::after {
     position: absolute;
     z-index: 1;
     top: 16px;
@@ -393,41 +364,20 @@
 
     content: "";
 
-    background-image: url("../../img/sprite/sprite.svg#three-stars");
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  &--three-stars::after {
+    background-image: url("../../img/sprite/sprite.svg#three-stars");
   }
 
   &--four-stars::after {
-    position: absolute;
-    z-index: 1;
-    top: 16px;
-    left: 0;
-
-    width: 84px;
-    height: 16px;
-
-    content: "";
-
     background-image: url("../../img/sprite/sprite.svg#four-stars");
-    background-repeat: no-repeat;
-    background-position: center;
   }
 
   &--five-stars::after {
-    position: absolute;
-    z-index: 1;
-    top: 16px;
-    left: 0;
-
-    width: 84px;
-    height: 16px;
-
-    content: "";
-
     background-image: url("../../img/sprite/sprite.svg#five-stars");
-    background-repeat: no-repeat;
-    background-position: center;
   }
 }
 
