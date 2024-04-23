@@ -32,7 +32,7 @@
               <a class="main-nav__link" href="#tours">Туры</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#education">Обучение</a>
+              <a class="main-nav__link" href="#training">Обучение</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#about-us">О нас</a>
@@ -177,8 +177,8 @@
 
       <section class="tours" id="tours" data-test="tours">
         <div class="tours__wrapper">
-          <h2 class="tours__header-small">Ближайшие туры</h2>
-          <span class="tours__header-big">Ближайшие туры</span>
+          <h2 class="tours__header-small title">Ближайшие туры</h2>
+          <span class="tours__header-big title title--big">Ближайшие туры</span>
           <div class="tours__buttons">
             <button class="tours__button tours__button--prev" type="button" aria-label="Кнопка назад.">
               <svg class="tours__button-img" width="14" height="9" viewBox="0 0 14 9" fill="none"
@@ -381,11 +381,236 @@
           Показать все туры
         </a>
       </section>
+
+      <section class="training" id="training" data-test="training">
+        <div class="training__wrapper">
+          <div class="training__text-wrapper">
+            <h2 class="training__header-small title">Обучение</h2>
+            <span class="training__header-big title title--big">Обучение</span>
+            <p>
+              Обучение проводится квалифицированными специалистами, за&nbsp;плечами&nbsp;которых десятки пройденных маршрутов
+              Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.
+            </p>
+          </div>
+
+          <div class="training__instructors">
+            <h3 class="training__instructors-header title">Наши инструкторы</h3>
+            <div class="training__buttons">
+              <button class="training__button training__button--prev" type="button" aria-label="Кнопка назад.">
+                <svg class="training__button-img" width="14" height="9" viewBox="0 0 14 9" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M13.3536 4.85355C13.5488 4.65829 13.5488 4.34171 13.3536 4.14645L10.1716 0.964466C9.97631 0.769204 9.65973 0.769204 9.46447 0.964466C9.2692 1.15973 9.2692 1.47631 9.46447 1.67157L12.2929 4.5L9.46447 7.32843C9.2692 7.52369 9.2692 7.84027 9.46447 8.03553C9.65973 8.2308 9.97631 8.2308 10.1716 8.03553L13.3536 4.85355ZM0 5H13V4H0V5Z"
+                    fill="white" />
+                </svg>
+              </button>
+              <button class="training__button training__button--next" type="button" aria-label="Кнопка вперед.">
+                <svg class="training__button-img" width="14" height="9" viewBox="0 0 14 9" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M13.3536 4.85355C13.5488 4.65829 13.5488 4.34171 13.3536 4.14645L10.1716 0.964466C9.97631 0.769204 9.65973 0.769204 9.46447 0.964466C9.2692 1.15973 9.2692 1.47631 9.46447 1.67157L12.2929 4.5L9.46447 7.32843C9.2692 7.52369 9.2692 7.84027 9.46447 8.03553C9.65973 8.2308 9.97631 8.2308 10.1716 8.03553L13.3536 4.85355ZM0 5H13V4H0V5Z"
+                    fill="white" />
+                </svg>
+              </button>
+            </div>
+            <div class="training__swiper swiper">
+              <div class="training__swiper-wrapper swiper-wrapper">
+                <div class="training__swiper-slide swiper-slide" tabindex="0">
+                  <picture class="training__picture">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/training/training-first-desktop@1x.webp 1x,
+                    img/training/training-first-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/training/training-first-tablet@1x.webp 1x,
+                    img/training/training-first-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/training/training-first-mobile@1x.webp 1x,
+                    img/training/training-first-mobile@2x.webp 2x">
+
+                    <source type="image/png" media="(min-width: 1440px)" srcset="img/training/training-first-desktop@1x.jpg 1x,
+                    img/training/training-first-desktop@2x.jpg 2x">
+                    <source type="image/png" media="(min-width: 768px)" srcset="img/training/training-first-tablet@1x.jpg 1x,
+                    img/training/training-first-tablet@2x.jpg 2x">
+                    <img class="training__picture-img" src="img/training/training-first-mobile@1x.jpg"
+                      srcset="img/training/training-first-mobile@2x.jpg 2x" alt="Фотография Александра
+                      Прокофьева" width="260" height="200">
+                  </picture>
+                  <div class="training__info">
+                    <div class="training__name-wrapper">
+                      <h4>Александр <br> Прокофьев</h4>
+                      <a class="training__link" href="#" aria-label="Страница инструктора в ВК.">
+                        <svg width="14" height="8">
+                          <use href="./img/sprite/sprite.svg#vk"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <p>
+                      Строгий и внимательный инструктор,
+                      весёлый и&nbsp;общительный человек.
+                      Любит природу.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="training__swiper-slide swiper-slide" tabindex="0">
+                  <picture class="training__picture">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/training/training-second-desktop@1x.webp 1x,
+                    img/training/training-second-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/training/training-second-tablet@1x.webp 1x,
+                    img/training/training-second-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/training/training-second-mobile@1x.webp 1x,
+                    img/training/training-second-mobile@2x.webp 2x">
+
+                    <source type="image/png" media="(min-width: 1440px)" srcset="img/training/training-second-desktop@1x.jpg 1x,
+                    img/training/training-second-desktop@2x.jpg 2x">
+                    <source type="image/png" media="(min-width: 768px)" srcset="img/training/training-second-tablet@1x.jpg 1x,
+                    img/training/training-second-tablet@2x.jpg 2x">
+                    <img class="training__picture-img" src="img/training/training-second-mobile@1x.jpg"
+                      srcset="img/training/training-second-mobile@2x.jpg 2x" alt="Фотография Светланы
+                      Афиногеновой" width="260" height="200">
+                  </picture>
+                  <div class="training__info">
+                    <div class="training__name-wrapper">
+                      <h4>Светлана <br> Афиногенова</h4>
+                      <a class="training__link" href="#" aria-label="Страница инструктора в ВК.">
+                        <svg width="14" height="8">
+                          <use href="./img/sprite/sprite.svg#vk"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <p>
+                      Видеть мир вокруг, познавать
+                      его&nbsp;опасности, находить друг друга,
+                      становиться ближе, чувствовать —
+                      в&nbsp;этом назначение жизни.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="training__swiper-slide swiper-slide" tabindex="0">
+                  <picture class="training__picture">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/training/training-third-desktop@1x.webp 1x,
+                    img/training/training-third-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/training/training-third-tablet@1x.webp 1x,
+                    img/training/training-third-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/training/training-third-mobile@1x.webp 1x,
+                    img/training/training-third-mobile@2x.webp 2x">
+
+                    <source type="image/png" media="(min-width: 1440px)" srcset="img/training/training-third-desktop@1x.jpg 1x,
+                    img/training/training-third-desktop@2x.jpg 2x">
+                    <source type="image/png" media="(min-width: 768px)" srcset="img/training/training-third-tablet@1x.jpg 1x,
+                    img/training/training-third-tablet@2x.jpg 2x">
+                    <img class="training__picture-img" src="img/training/training-third-mobile@1x.jpg"
+                      srcset="img/training/training-third-mobile@2x.jpg 2x" alt="Фотография Надежды
+                      Колесниченко" width="260" height="200">
+                  </picture>
+                  <div class="training__info">
+                    <div class="training__name-wrapper">
+                      <h4>Надежда <br> Колесниченко</h4>
+                      <a class="training__link" href="#" aria-label="Страница инструктора в ВК.">
+                        <svg width="14" height="8">
+                          <use href="./img/sprite/sprite.svg#vk"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <p>
+                      Участники говорят, что&nbsp;Надежда
+                      ответственная, приятная в общении,
+                      и&nbsp;в&nbsp;поездках с&nbsp;ней&nbsp;чувствуешь себя
+                      спокойно и уверенно.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="training__swiper-slide swiper-slide" tabindex="0">
+                  <picture class="training__picture">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/training/training-fourth-desktop@1x.webp 1x,
+                    img/training/training-fourth-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/training/training-fourth-tablet@1x.webp 1x,
+                    img/training/training-fourth-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/training/training-fourth-mobile@1x.webp 1x,
+                    img/training/training-fourth-mobile@2x.webp 2x">
+
+                    <source type="image/png" media="(min-width: 1440px)" srcset="img/training/training-fourth-desktop@1x.jpg 1x,
+                    img/training/training-fourth-desktop@2x.jpg 2x">
+                    <source type="image/png" media="(min-width: 768px)" srcset="img/training/training-fourth-tablet@1x.jpg 1x,
+                    img/training/training-fourth-tablet@2x.jpg 2x">
+                    <img class="training__picture-img" src="img/training/training-fourth-mobile@1x.jpg"
+                      srcset="img/training/training-fourth-mobile@2x.jpg 2x" alt="Фотография Федора
+                      Кайгородова" width="260" height="200">
+                  </picture>
+                  <div class="training__info">
+                    <div class="training__name-wrapper">
+                      <h4>Федор <br> Кайгородов</h4>
+                      <a class="training__link" href="#" aria-label="Страница инструктора в ВК.">
+                        <svg width="14" height="8">
+                          <use href="./img/sprite/sprite.svg#vk"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <p>
+                      Опыт походов: Ходит в походы
+                      с&nbsp;2001&nbsp;года. В России побывал в горных
+                      районах Хибины, Архыз, много
+                      путешествует по Европе.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="training__swiper-slide swiper-slide" tabindex="0">
+                  <picture class="training__picture">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/training/training-fifth-desktop@1x.webp 1x,
+                    img/training/training-fifth-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/training/training-fifth-tablet@1x.webp 1x,
+                    img/training/training-fifth-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/training/training-fifth-mobile@1x.webp 1x,
+                    img/training/training-fifth-mobile@2x.webp 2x">
+
+                    <source type="image/png" media="(min-width: 1440px)" srcset="img/training/training-fifth-desktop@1x.jpg 1x,
+                    img/training/training-fifth-desktop@2x.jpg 2x">
+                    <source type="image/png" media="(min-width: 768px)" srcset="img/training/training-fifth-tablet@1x.jpg 1x,
+                    img/training/training-fifth-tablet@2x.jpg 2x">
+                    <img class="training__picture-img" src="img/training/training-fifth-mobile@1x.jpg"
+                      srcset="img/training/training-fifth-mobile@2x.jpg 2x" alt="Фотография Федора
+                      Кайгородова" width="260" height="200">
+                  </picture>
+                  <div class="training__info">
+                    <div class="training__name-wrapper">
+                      <h4>Даниэль <br> Васнецов</h4>
+                      <a class="training__link" href="#" aria-label="Страница инструктора в ВК.">
+                        <svg width="14" height="8">
+                          <use href="./img/sprite/sprite.svg#vk"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <p>
+                      Покорял самые сложные вершины.
+                      Выбирался из под лавин, дружит с
+                      медведями и не только.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="training__process">
+            <h3 class="training__process-header">Процесс обучения</h3>
+            <ul class="training__process-list">
+              <li class="training__process-item training__process-item--map">
+                <p class="training__process-text">Изучение спортивного туристского движения</p>
+              </li>
+              <li class="training__process-item training__process-item--boots">
+                <p  class="training__process-text">Подготовка и&nbsp;техническое снаряжение в&nbsp;походах</p>
+              </li>
+              <li class="training__process-item training__process-item--tree">
+                <p  class="training__process-text">Лекции по&nbsp;окружающей среде, экологии и&nbsp;гигиене</p>
+              </li>
+              <li class="training__process-item training__process-item--mountain">
+                <p  class="training__process-text">Разъяснение сложности горных препятствий</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
-
-
-
-
   </div>
   <script type="module" src="js/main.js"></script>
 </body>

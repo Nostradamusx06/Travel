@@ -17,7 +17,7 @@
     padding-bottom: 3px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     min-height: 692px;
     padding: 342px 0 0 45px;
 
@@ -31,7 +31,7 @@
     }
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     min-height: 520px;
     padding: 200px 120px 80px;
   }
@@ -72,11 +72,11 @@
 
   color: $color-default-white;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     padding-right: 45px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     display: block;
     align-items: normal;
 
@@ -94,7 +94,7 @@
 
     text-align: center;
 
-    @media (min-width: $tablet-width) {
+    @media(min-width: $tablet-width) {
       font-size: $font-line-size-blue-whale;
       line-height: $font-line-size-blue-whale;
 
@@ -102,7 +102,7 @@
       margin-bottom: 13px;
     }
 
-    @media (min-width: $desktop-width) {
+    @media(min-width: $desktop-width) {
       font-size: $font-line-size-moon;
       line-height: $font-line-size-moon;
 
@@ -124,7 +124,7 @@
 
     text-align: center;
 
-    @media (min-width: $tablet-width) {
+    @media(min-width: $tablet-width) {
       font-size: $font-line-size-dog;
       line-height: $font-line-size-lion;
 
@@ -132,7 +132,7 @@
       margin-bottom: 37px;
     }
 
-    @media (min-width: $desktop-width) {
+    @media(min-width: $desktop-width) {
       max-width: 420px;
       margin-bottom: 37px;
 
@@ -161,7 +161,7 @@
   width: 140px;
   padding: 21px 20px 19px;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     padding: 20px;
   }
 }
@@ -177,7 +177,7 @@
 .hero__description-item {
   display: none;
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     font-size: $font-line-size-mouse;
     font-weight: $regular;
     line-height: $font-line-size-fox;
@@ -230,11 +230,11 @@
 
   gap: 12px;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     bottom: 40px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     bottom: 92px;
     left: 1216px;
 
@@ -256,7 +256,7 @@
 
   gap: 11px;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     width: 18px;
     height: 18px;
   }

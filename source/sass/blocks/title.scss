@@ -1,0 +1,42 @@
+.title {
+  font-size: $font-line-size-bear;
+  font-weight: $extra-bold;
+  line-height: $font-line-size-bear;
+
+  margin: 0;
+
+  color: $color-elephant;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-line-size-alligator;
+    line-height: $font-line-size-alligator;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-line-size-anaconda;
+    line-height: $font-line-size-anaconda;
+  }
+
+  &--big {
+    font-size: $font-line-size-hippo;
+    font-weight: $extra-bold;
+    line-height: $font-line-size-hippo;
+
+    position: absolute;
+
+    margin: 0;
+
+    opacity: 0.03;
+    color: $color-elephant;
+
+    @media (min-width: $tablet-width) {
+      font-size: $font-line-size-giraffe;
+      line-height: $font-line-size-giraffe;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: $font-line-size-grampus;
+      line-height: $font-line-size-grampus;
+    }
+  }
+}
