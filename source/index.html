@@ -628,7 +628,8 @@
               <source type="image/png" media="(min-width: 768px)" srcset="img/about/about-tablet@1x.jpg 1x,
               img/about/about-tablet@2x.jpg 2x">
               <img class="about__picture-img" src="img/about/about-mobile@1x.jpg"
-                srcset="img/about/about-mobile@2x.jpg 2x" alt="Фотография пяти человек в горах" width="350" height="398">
+                srcset="img/about/about-mobile@2x.jpg 2x" alt="Фотография пяти человек в горах" width="350"
+                height="398">
             </picture>
           </div>
           <div class="about__content-wrapper">
@@ -653,6 +654,174 @@
           </div>
         </div>
       </section>
+
+      <section class="reviews" id="reviews" data-test="reviews">
+        <div class="reviews__wrapper">
+          <div class="reviews__header-wrapper">
+            <h2 class="reviews__header-small title">Отзывы</h2>
+            <span class="reviews__header-big title title--big">Отзывы</span>
+          </div>
+          <div class="reviews__buttons">
+            <button class="reviews__button reviews__button--prev" type="button" aria-label="Кнопка назад.">
+              <svg class="reviews__button-img" width="14" height="9" viewBox="0 0 14 9" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13.3536 4.85355C13.5488 4.65829 13.5488 4.34171 13.3536 4.14645L10.1716 0.964466C9.97631 0.769204 9.65973 0.769204 9.46447 0.964466C9.2692 1.15973 9.2692 1.47631 9.46447 1.67157L12.2929 4.5L9.46447 7.32843C9.2692 7.52369 9.2692 7.84027 9.46447 8.03553C9.65973 8.2308 9.97631 8.2308 10.1716 8.03553L13.3536 4.85355ZM0 5H13V4H0V5Z"
+                  fill="white" />
+              </svg>
+            </button>
+            <button class="reviews__button reviews__button--next" type="button" aria-label="Кнопка вперед.">
+              <svg class="reviews__button-img" width="14" height="9" viewBox="0 0 14 9" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13.3536 4.85355C13.5488 4.65829 13.5488 4.34171 13.3536 4.14645L10.1716 0.964466C9.97631 0.769204 9.65973 0.769204 9.46447 0.964466C9.2692 1.15973 9.2692 1.47631 9.46447 1.67157L12.2929 4.5L9.46447 7.32843C9.2692 7.52369 9.2692 7.84027 9.46447 8.03553C9.65973 8.2308 9.97631 8.2308 10.1716 8.03553L13.3536 4.85355ZM0 5H13V4H0V5Z"
+                  fill="white" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="reviews__swiper swiper">
+            <div class="reviews__swiper-wrapper swiper-wrapper">
+
+              <div class="reviews__swiper-slide swiper-slide" tabindex="0">
+                <div class="reviews__img-wrapper">
+                  <picture class="reviews__picture">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/reviews/reviews-first-desktop@1x.webp 1x,
+                    img/reviews/reviews-first-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/reviews-first-tablet@1x.webp 1x,
+                    img/reviews/reviews-first-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/reviews/reviews-first-mobile@1x.webp 1x,
+                    img/reviews/reviews-first-mobile@2x.webp 2x">
+
+                    <source type="image/png" media="(min-width: 1440px)" srcset="img/reviews/reviews-first-desktop@1x.jpg 1x,
+                    img/reviews/reviews-first-desktop@2x.jpg 2x">
+                    <source type="image/png" media="(min-width: 768px)" srcset="img/reviews/reviews-first-tablet@1x.jpg 1x,
+                    img/reviews/reviews-first-tablet@2x.jpg 2x">
+                    <img class="reviews__picture-img" src="img/reviews/reviews-first-mobile@1x.jpg"
+                      srcset="img/reviews/reviews-first-mobile@2x.jpg 2x" alt="Фотография Александра
+                      Фролова" width="250" height="169">
+                  </picture>
+                </div>
+                <div class="reviews__info">
+                  <p>
+                    Осенью ходили в поход на Алтай с&nbsp;друзьями.
+                    Впечатления потрясающие! Инструкторы,
+                    настоящие эксперты, всему научили,
+                    все&nbsp;показали. Делились историями о&nbsp;местах,
+                    людях, культуре места.
+                  </p>
+                  <p>
+                    С уверенностью могу сказать, что&nbsp;жизнь
+                    разделилась на до этого и&nbsp;после. Ещё&nbsp;никогда
+                    не&nbsp;отдыхал так&nbsp;душой и&nbsp;телом.&nbsp;Всем очень
+                    рекомендую!
+                  </p>
+                  <h3 class="reviews__name">Фролов Александр</h3>
+                  <span class="reviews__birth">38 лет, Москва</span>
+                </div>
+              </div>
+
+              <div class="reviews__swiper-slide swiper-slide" tabindex="0">
+                <div class="reviews__img-wrapper">
+                  <picture class="reviews__picture">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/reviews/reviews-second-desktop@1x.webp 1x,
+                    img/reviews/reviews-second-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/reviews-second-tablet@1x.webp 1x,
+                    img/reviews/reviews-second-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/reviews/reviews-second-mobile@1x.webp 1x,
+                    img/reviews/reviews-second-mobile@2x.webp 2x">
+
+                    <source type="image/png" media="(min-width: 1440px)" srcset="img/reviews/reviews-second-desktop@1x.jpg 1x,
+                    img/reviews/reviews-second-desktop@2x.jpg 2x">
+                    <source type="image/png" media="(min-width: 768px)" srcset="img/reviews/reviews-second-tablet@1x.jpg 1x,
+                    img/reviews/reviews-second-tablet@2x.jpg 2x">
+                    <img class="reviews__picture-img" src="img/reviews/reviews-second-mobile@1x.jpg"
+                      srcset="img/reviews/reviews-second-mobile@2x.jpg 2x" alt="Фотография Александра
+                      Фролова" width="250" height="169">
+                  </picture>
+                </div>
+                <div class="reviews__info">
+                  <p>
+                    Хороший полноценный поход
+                    с&nbsp;разнообразными локациями. В начале дорога идёт по лыжне, далее прошли
+                    мимо полигона, по болотам, у озёр и лесных ручьёв,
+                    остатков дач конца 19 века. Было очень интересно!
+                  </p>
+                  <p>
+                    Инструктор Федор дружелюбный, внимательный к технике
+                    безопасности и своим туристам. Всем советую этот тур.
+                  </p>
+                  <h3 class="reviews__name">Иван Соловьёв</h3>
+                  <span class="reviews__birth">25 лет, Владивосток</span>
+                </div>
+              </div>
+
+              <div class="reviews__swiper-slide swiper-slide" tabindex="0">
+                <div class="reviews__img-wrapper">
+                  <picture class="reviews__picture">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/reviews/reviews-third-desktop@1x.webp 1x,
+                    img/reviews/reviews-third-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/reviews-third-tablet@1x.webp 1x,
+                    img/reviews/reviews-third-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/reviews/reviews-third-mobile@1x.webp 1x,
+                    img/reviews/reviews-third-mobile@2x.webp 2x">
+
+                    <source type="image/png" media="(min-width: 1440px)" srcset="img/reviews/reviews-third-desktop@1x.jpg 1x,
+                    img/reviews/reviews-third-desktop@2x.jpg 2x">
+                    <source type="image/png" media="(min-width: 768px)" srcset="img/reviews/reviews-third-tablet@1x.jpg 1x,
+                    img/reviews/reviews-third-tablet@2x.jpg 2x">
+                    <img class="reviews__picture-img" src="img/reviews/reviews-third-mobile@1x.jpg"
+                      srcset="img/reviews/reviews-third-mobile@2x.jpg 2x" alt="Фотография Евгении
+                      Баженовой" width="250" height="169">
+                  </picture>
+                </div>
+                <div class="reviews__info">
+                  <p>
+                    Ранее не ходила на такие длинные дистанции. В первый день прошли около 30 км, физически я устала на 18 км, поэтому не была уверена, пройду ли до конца. Но я справилась. Второй день прошёл легче, чем ожидала, видимо организм уже привык.
+                  </p>
+                  <p>
+                    Спасибо ребятам, инструкторам за помощь и поддержку! Я была рада быть в такой компании.
+                  </p>
+                  <h3 class="reviews__name">Евгения Баженова</h3>
+                  <span class="reviews__birth">23 года, Кострома</span>
+                </div>
+              </div>
+
+              <div class="reviews__swiper-slide swiper-slide" tabindex="0">
+                <div class="reviews__img-wrapper">
+                  <picture class="reviews__picture">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/reviews/reviews-fourth-desktop@1x.webp 1x,
+                    img/reviews/reviews-fourth-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/reviews-fourth-tablet@1x.webp 1x,
+                    img/reviews/reviews-fourth-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/reviews/reviews-fourth-mobile@1x.webp 1x,
+                    img/reviews/reviews-fourth-mobile@2x.webp 2x">
+
+                    <source type="image/png" media="(min-width: 1440px)" srcset="img/reviews/reviews-fourth-desktop@1x.jpg 1x,
+                    img/reviews/reviews-fourth-desktop@2x.jpg 2x">
+                    <source type="image/png" media="(min-width: 768px)" srcset="img/reviews/reviews-fourth-tablet@1x.jpg 1x,
+                    img/reviews/reviews-fourth-tablet@2x.jpg 2x">
+                    <img class="reviews__picture-img" src="img/reviews/reviews-fourth-mobile@1x.jpg"
+                      srcset="img/reviews/reviews-fourth-mobile@2x.jpg 2x" alt="Фотография Елены
+                      Пироговой" width="250" height="169">
+                  </picture>
+                </div>
+                <div class="reviews__info">
+                  <p>
+                    Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось! Дух захватывает, когда наконец‑то, преодолев все трудности и препятствия, взбираешься на вершину.
+                  </p>
+                  <p>
+                    У нас собралась потрясающая команда. Все друг друга поддерживали, по вечерам мы сидели вместе у костра и пели песни. Обязательно повторю такое приключение!
+                  </p>
+                  <h3 class="reviews__name">Елена Пирогова</h3>
+                  <span class="reviews__birth">37 лет, Тюмень</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
   </div>
   <script type="module" src="js/main.js"></script>

@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ru" data-validate="html">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="LifeTour website page, where you can check out tours and go on them with the best instructors in Russia">
+  <link rel="preload" href="./assets/Montserrat-VariableFont_wght-iWngeIrl.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <title>LifeTour</title>
+  <script type="module" crossorigin src="./assets/index-Ce1uegOc.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-q0YBd5f0.css">
+</head>
+
+<body class="page-body">
+  <header class="header header--nojs" data-test="header">
+    <div class="header__container">
+      <div class="header__wrapper">
+        <button class="header__menu-toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <a class="header__logo" href="index.html">
+          <picture>
+            <source type="image/svg+xml" media="(min-width:1440px)" srcset="./assets/logo-desktop-Bg4gXKuJ.svg" width="205"
+              height="62">
+            <img src="./assets/logo-tablet-CgoCUJwA.svg" width="142" height="42" alt="Логотип LifeTour">
+          </picture>
+        </a>
+        <nav class="header__nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#tours">Туры</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#training">Обучение</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#about">О нас</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#reviews">Отзывы</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#gallery">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__phone-link" href="tel:88000000000">8 800 000-00-00</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-body__wrapper">
+    <main>
+      <section class="hero" data-test="hero">
+        <h1 class="visually-hidden">LifeTour - организация походов в горы.</h1>
+        <div class="hero__swiper swiper">
+          <div class="hero__swiper-wrapper swiper-wrapper">
+            <div class="hero__swiper-slide swiper-slide hero__swiper-slide--first" tabindex="0">
+              <div class="hero__background">
+                <picture class="hero__background-picture">
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./assets/hero-desktop-first@1x-BpeOQ4Mr.webp 1x, ./assets/hero-desktop-first@2x-caNbuLKC.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./assets/hero-tablet-first@1x-CrTLs-yd.webp 1x, ./assets/hero-tablet-first@2x-CoWFRMO2.webp 2x">
+                  <source type="image/webp" media="(min-width: 320px)" srcset="data:image/webp;base64,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 1x, ./assets/hero-mobile-first@2x-C8BQG-2C.webp 2x">
+
+                  <source type="image/png" media="(min-width: 1440px)" srcset="./assets/hero-desktop-first@1x-V2JhPNvT.jpg 1x, ./assets/hero-desktop-first@2x-D-t9EcHh.jpg 2x">
+                  <source type="image/png" media="(min-width: 768px)" srcset="./assets/hero-tablet-first@1x-B-FmwYQF.jpg 1x, ./assets/hero-tablet-first@2x-d02kFFvz.jpg 2x">
+                  <img class="hero__background-img" src="./assets/hero-mobile-first@1x-GkUDv9yD.jpg"
+                    srcset="./assets/hero-mobile-first@2x-CQnso2L-.jpg 2x" alt="Фотография вершин Кавказа" width="320"
+                    height="568">
+                </picture>
+              </div>
+              <div class="hero__info">
+                <h2>Захватывающие вершины&nbsp;Кавказа</h2>
+                <p>
+                  В&nbsp;сопровождении&nbsp;опытных&nbsp;гидов вы&nbsp;пройдёте
+                  через&nbsp;потрясающие ландшафты и совершите
+                  восход на&nbsp;вершину горы Чегет.
+                </p>
+                <a class="hero__button button" href="#">Смотреть тур</a>
+                <div class="hero__description">
+                  <span class="hero__description-item hero__description-item--time">
+                    6 дней/5 ночей
+                  </span>
+                  <span class="hero__description-item hero__description-item--complexity">
+                    Высокая сложность
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="hero__swiper-slide swiper-slide hero__swiper-slide--second" tabindex="0">
+              <div class="hero__background">
+                <picture class="hero__background-picture">
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./assets/hero-desktop-second@1x-BuLa30GN.webp 1x, ./assets/hero-desktop-second@2x-jxSv_HnH.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./assets/hero-tablet-second@1x-CqwFc8tG.webp 1x, ./assets/hero-tablet-second@2x-B4r3vKYc.webp 2x">
+                  <source type="image/webp" media="(min-width: 320px)" srcset="data:image/webp;base64,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 1x, ./assets/hero-mobile-second@2x-DCPQWdO4.webp 2x">
+
+                  <source type="image/png" media="(min-width: 1440px)" srcset="./assets/hero-desktop-second@1x-DozI_lPY.jpg 1x, ./assets/hero-desktop-second@2x-CvkcKSI9.jpg 2x">
+                  <source type="image/png" media="(min-width: 768px)" srcset="./assets/hero-tablet-second@1x-CykPi9Tp.jpg 1x, ./assets/hero-tablet-second@2x-B4PudhTs.jpg 2x">
+                  <img class="hero__background-img" src="./assets/hero-mobile-second@1x-CqpmOuzA.jpg"
+                    srcset="./assets/hero-mobile-second@2x-CGA8c9gO.jpg 2x" alt="Фотография природы Камчатки" width="320"
+                    height="568">
+                </picture>
+              </div>
+              <div class="hero__info">
+                <h2>Невероятная природа&nbsp;Камчатки</h2>
+                <p>
+                  Незабываемое&nbsp;приключение, во&nbsp;время&nbsp;которого вы&nbsp;отправитесь
+                  в&nbsp;путешествие&nbsp;по&nbsp;одному&nbsp;из&nbsp;самых
+                  нетронутых уголков дикой природы в мире.
+                </p>
+                <a class="hero__button button" href="#">Смотреть тур</a>
+                <div class="hero__description">
+                  <span class="hero__description-item hero__description-item--time">
+                    9 дней/10 ночей
+                  </span>
+                  <span class="hero__description-item hero__description-item--complexity">
+                    Средняя сложность
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="hero__swiper-slide swiper-slide hero__swiper-slide--third" tabindex="0">
+              <div class="hero__background">
+                <picture class="hero__background-picture">
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./assets/hero-desktop-third@1x-Lm4Hcm_D.webp 1x, ./assets/hero-desktop-third@2x-DYgfmupU.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./assets/hero-tablet-third@1x-DVTbo1Yl.webp 1x, ./assets/hero-tablet-third@2x-qpEBwVDj.webp 2x">
+                  <source type="image/webp" media="(min-width: 320px)" srcset="./assets/hero-mobile-third@1x-Bd9ssQom.webp 1x, ./assets/hero-mobile-third@2x-BT_fC31C.webp 2x">
+
+                  <source type="image/png" media="(min-width: 1440px)" srcset="./assets/hero-desktop-third@1x-CRZP1C5N.jpg 1x, ./assets/hero-desktop-third@2x-Dqj_1HSu.jpg 2x">
+                  <source type="image/png" media="(min-width: 768px)" srcset="./assets/hero-tablet-third@1x-B0Okg-yK.jpg 1x, ./assets/hero-tablet-third@2x-DcmwOSyZ.jpg 2x">
+                  <img class="hero__background-img" src="./assets/hero-mobile-third@1x-CCpiw2Gn.jpg"
+                    srcset="./assets/hero-mobile-third@2x-BRzX21cp.jpg 2x" alt="Фотография Алтайского края" width="320"
+                    height="568">
+                </picture>
+              </div>
+              <div class="hero__info">
+                <h2>Магические пейзажи Алтайского&nbsp;Края</h2>
+                <p>
+                  Алтайский трекинг-тур &ndash; это&nbsp;захватывающее
+                  приключение с посещением&nbsp;магических
+                  и&nbsp;захватывающих&nbsp;дух&nbsp;ландшафтов Алтайских&nbsp;гор.
+                </p>
+                <a class="hero__button button" href="#">Смотреть тур</a>
+                <div class="hero__description">
+                  <span class="hero__description-item hero__description-item--time">
+                    8 дней/7 ночей
+                  </span>
+                  <span class="hero__description-item hero__description-item--complexity">
+                    Лёгкая сложность
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero__swiper-pagination swiper-pagination hero__swiper-pagination--right"></div>
+        </div>
+      </section>
+
+      <section class="tours" id="tours" data-test="tours">
+        <div class="tours__wrapper">
+          <h2 class="tours__header-small title">Ближайшие туры</h2>
+          <span class="tours__header-big title title--big">Ближайшие туры</span>
+          <div class="tours__buttons">
+            <button class="tours__button tours__button--prev" type="button" aria-label="Кнопка назад.">
+              <svg class="tours__button-img" width="14" height="9" viewBox="0 0 14 9" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13.3536 4.85355C13.5488 4.65829 13.5488 4.34171 13.3536 4.14645L10.1716 0.964466C9.97631 0.769204 9.65973 0.769204 9.46447 0.964466C9.2692 1.15973 9.2692 1.47631 9.46447 1.67157L12.2929 4.5L9.46447 7.32843C9.2692 7.52369 9.2692 7.84027 9.46447 8.03553C9.65973 8.2308 9.97631 8.2308 10.1716 8.03553L13.3536 4.85355ZM0 5H13V4H0V5Z"
+                  fill="white" />
+              </svg>
+
+            </button>
+            <button class="tours__button tours__button--next" type="button" aria-label="Кнопка вперед.">
+              <svg class="tours__button-img" width="14" height="9" viewBox="0 0 14 9" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13.3536 4.85355C13.5488 4.65829 13.5488 4.34171 13.3536 4.14645L10.1716 0.964466C9.97631 0.769204 9.65973 0.769204 9.46447 0.964466C9.2692 1.15973 9.2692 1.47631 9.46447 1.67157L12.2929 4.5L9.46447 7.32843C9.2692 7.52369 9.2692 7.84027 9.46447 8.03553C9.65973 8.2308 9.97631 8.2308 10.1716 8.03553L13.3536 4.85355ZM0 5H13V4H0V5Z"
+                  fill="white" />
+              </svg>
+
+            </button>
+          </div>
+          <div class="tours__swiper swiper">
+            <div class="tours__swiper-wrapper swiper-wrapper">
+              <div class="tours__swiper-slide swiper-slide" tabindex="0">
+                <div class="tours__background">
+                  <picture class="tours__background-picture">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="./assets/tours-first-desktop@1x-lDvWIoGr.webp 1x, ./assets/tours-first-desktop@2x-jB3EKGpH.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./assets/tours-first-tablet@1x-iQy64ftj.webp 1x, ./assets/tours-first-tablet@2x-Bsu_wNf2.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="data:image/webp;base64,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 1x, ./assets/tours-first-mobile@2x-BASPlJwN.webp 2x">
+
+                    <source type="image/png" media="(min-width: 1440px)" srcset="./assets/tours-first-desktop@1x-DEM0egmL.jpg 1x, ./assets/tours-first-desktop@2x-Dwv4dVf4.jpg 2x">
+                    <source type="image/png" media="(min-width: 768px)" srcset="./assets/tours-first-tablet@1x-CyLqgrz6.jpg 1x, ./assets/tours-first-tablet@2x-C_3JBQ2B.jpg 2x">
+                    <img class="tours__background-img" src="./assets/tours-first-mobile@1x-BmOWsRh9.jpg"
+                      srcset="./assets/tours-first-mobile@2x-DINykAUZ.jpg 2x" alt="Фотография Эльбруса" width="290"
+                      height="416">
+                  </picture>
+                </div>
+                <div class="tours__info">
+                  <div class="tours__details-top">
+                    <p class="tours__place">Кавказ</p>
+                    <div class="tours__duration-wrapper">
+                      <p class="tours__days">4 дня</p>
+                      <p class="tours__nights">3 ночи</p>
+                    </div>
+                  </div>
+                  <h3 class="tours__slide-header">Путешествие<br> вокруг Эльбруса</h3>
+                  <ul class="tours__details">
+                    <li class="tours__complexity">
+                      <p class="tours__details-subheading tours__details-subheading--four-stars">Сложность:</p>
+                    </li>
+                    <li class="tours__date">
+                      <p class="tours__details-subheading">Даты набора:</p>
+                      <span class="tours__details-description">12.06–19.06</span>
+                    </li>
+                    <li class="tours__group">
+                      <p class="tours__details-subheading">Группа:</p>
+                      <span class="tours__details-description">до 15 чел.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="tours__swiper-slide swiper-slide" tabindex="0">
+                <div class="tours__background">
+                  <picture class="tours__background-picture">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="./assets/tours-second-desktop@1x-DaP74yob.webp 1x, ./assets/tours-second-desktop@2x-DFUMyXqF.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./assets/tours-second-tablet@1x-CC9nEiz9.webp 1x, ./assets/tours-second-tablet@2x-DN0InNnl.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="./assets/tours-second-mobile@1x-D_cWvyhn.webp 1x, ./assets/tours-second-mobile@2x-DbXim0bd.webp 2x">
+
+                    <source type="image/png" media="(min-width: 1440px)" srcset="./assets/tours-second-desktop@1x-dZaiDeq8.jpg 1x, ./assets/tours-second-desktop@2x-DWyRbQme.jpg 2x">
+                    <source type="image/png" media="(min-width: 768px)" srcset="./assets/tours-second-tablet@1x-DHGLny-G.jpg 1x, ./assets/tours-second-tablet@2x-DXf7-G8R.jpg 2x">
+                    <img class="tours__background-img" src="./assets/tours-second-mobile@1x-WaLHrQ7T.jpg"
+                      srcset="./assets/tours-second-mobile@2x-BJJvYPd5.jpg 2x" alt="Фотография Белухи" width="290" height="416">
+                  </picture>
+                </div>
+                <div class="tours__info">
+                  <div class="tours__details-top">
+                    <p class="tours__place">Алтай</p>
+                    <div class="tours__duration-wrapper">
+                      <p class="tours__days">14 дней</p>
+                      <p class="tours__nights">13 ночей</p>
+                    </div>
+                  </div>
+                  <h3 class="tours__slide-header">Путь к подножию<br>Белухи</h3>
+                  <ul class="tours__details">
+                    <li class="tours__complexity">
+                      <p class="tours__details-subheading tours__details-subheading--three-stars">Сложность:</p>
+                    </li>
+                    <li class="tours__date">
+                      <p class="tours__details-subheading">Даты набора:</p>
+                      <span class="tours__details-description">14.06–23.06</span>
+                    </li>
+                    <li class="tours__group">
+                      <p class="tours__details-subheading">Группа:</p>
+                      <span class="tours__details-description">до 25 чел.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="tours__swiper-slide swiper-slide tours__swiper-slide--third" tabindex="0">
+                <div class="tours__background">
+                  <picture class="tours__background-picture">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="./assets/tours-third-desktop@1x-BLmc5uyh.webp 1x, ./assets/tours-third-desktop@2x-D-qja11y.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./assets/tours-third-tablet@1x-CK-WGr_k.webp 1x, ./assets/tours-third-tablet@2x-HqL-F7lU.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="./assets/tours-third-mobile@1x-CtdCS3ph.webp 1x, ./assets/tours-third-mobile@2x-Cw0iW42_.webp 2x">
+
+                    <source type="image/png" media="(min-width: 1440px)" srcset="./assets/tours-third-desktop@1x-CIkew45m.jpg 1x, ./assets/tours-third-desktop@2x-CAIqCKhm.jpg 2x">
+                    <source type="image/png" media="(min-width: 768px)" srcset="./assets/tours-third-tablet@1x-jPzix-LZ.jpg 1x, ./assets/tours-third-tablet@2x-Bh_os8YH.jpg 2x">
+                    <img class="tours__background-img" src="./assets/tours-third-mobile@1x-DneKJGxv.jpg"
+                      srcset="./assets/tours-third-mobile@2x-Bm8OsVK_.jpg 2x" alt="Фотография Фишта" width="290" height="416">
+                  </picture>
+                </div>
+                <div class="tours__info">
+                  <div class="tours__details-top">
+                    <p class="tours__place">Адыгея</p>
+                    <div class="tours__duration-wrapper">
+                      <p class="tours__days">7 дней</p>
+                      <p class="tours__nights">6 ночей</p>
+                    </div>
+                  </div>
+                  <h3 class="tours__slide-header">Через Фишт к&nbsp;Чёрному&nbsp;морю<br> и обратно</h3>
+                  <ul class="tours__details">
+                    <li class="tours__complexity">
+                      <p class="tours__details-subheading tours__details-subheading--four-stars">Сложность:</p>
+                    </li>
+                    <li class="tours__date">
+                      <p class="tours__details-subheading">Даты набора:</p>
+                      <span class="tours__details-description">15.07–19.07</span>
+                    </li>
+                    <li class="tours__group">
+                      <p class="tours__details-subheading">Группа:</p>
+                      <span class="tours__details-description">до 22 чел.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="tours__swiper-slide swiper-slide" tabindex="0">
+                <div class="tours__background">
+                  <picture class="tours__background-picture">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="./assets/tours-fourth-desktop@1x-Bd4FwMZ2.webp 1x, ./assets/tours-fourth-desktop@2x-C8dQiIKG.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./assets/tours-fourth-tablet@1x-DFrT6YMT.webp 1x, ./assets/tours-fourth-tablet@2x-DZlsNdW3.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="./assets/tours-fourth-mobile@1x-CfJzHaBR.webp 1x, ./assets/tours-fourth-mobile@2x-BG71k7vK.webp 2x">
+
+                    <source type="image/png" media="(min-width: 1440px)" srcset="./assets/tours-fourth-desktop@1x-Boi64QV6.jpg 1x, ./assets/tours-fourth-desktop@2x-DQfkK-2f.jpg 2x">
+                    <source type="image/png" media="(min-width: 768px)" srcset="./assets/tours-fourth-tablet@1x-DTdqaHhH.jpg 1x, ./assets/tours-fourth-tablet@2x-IIXiWS3I.jpg 2x">
+                    <img class="tours__background-img" src="./assets/tours-fourth-mobile@1x-DB1NEkFY.jpg"
+                      srcset="./assets/tours-fourth-mobile@2x-BuvDSZ6s.jpg 2x" alt="Фотография Манарага" width="290"
+                      height="416">
+                  </picture>
+                </div>
+                <div class="tours__info">
+                  <div class="tours__details-top">
+                    <p class="tours__place">Урал</p>
+                    <div class="tours__duration-wrapper">
+                      <p class="tours__days">9 дней</p>
+                      <p class="tours__nights">10 ночей</p>
+                    </div>
+                  </div>
+                  <h3 class="tours__slide-header">Восхождение<br>Манарага</h3>
+                  <ul class="tours__details">
+                    <li class="tours__complexity">
+                      <p class="tours__details-subheading tours__details-subheading--five-stars">Сложность:</p>
+                    </li>
+                    <li class="tours__date">
+                      <p class="tours__details-subheading">Даты набора:</p>
+                      <span class="tours__details-description">15.07–19.07</span>
+                    </li>
+                    <li class="tours__group">
+                      <p class="tours__details-subheading">Группа:</p>
+                      <span class="tours__details-description">до 22 чел.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="tours__show-button" href="#">
+          Показать все туры
+        </a>
+      </section>
+
+      <section class="training" id="training" data-test="training">
+        <div class="training__wrapper">
+          <div class="training__text-wrapper">
+            <h2 class="training__header-small title">Обучение</h2>
+            <span class="training__header-big title title--big">Обучение</span>
+            <p>
+              Обучение проводится квалифицированными специалистами, за&nbsp;плечами&nbsp;которых десятки пройденных
+              маршрутов
+              Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.
+            </p>
+          </div>
+
+          <div class="training__instructors">
+            <h3 class="training__instructors-header title">Наши инструкторы</h3>
+            <div class="training__buttons">
+              <button class="training__button training__button--prev" type="button" aria-label="Кнопка назад.">
+                <svg class="training__button-img" width="14" height="9" viewBox="0 0 14 9" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M13.3536 4.85355C13.5488 4.65829 13.5488 4.34171 13.3536 4.14645L10.1716 0.964466C9.97631 0.769204 9.65973 0.769204 9.46447 0.964466C9.2692 1.15973 9.2692 1.47631 9.46447 1.67157L12.2929 4.5L9.46447 7.32843C9.2692 7.52369 9.2692 7.84027 9.46447 8.03553C9.65973 8.2308 9.97631 8.2308 10.1716 8.03553L13.3536 4.85355ZM0 5H13V4H0V5Z"
+                    fill="white" />
+                </svg>
+              </button>
+              <button class="training__button training__button--next" type="button" aria-label="Кнопка вперед.">
+                <svg class="training__button-img" width="14" height="9" viewBox="0 0 14 9" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M13.3536 4.85355C13.5488 4.65829 13.5488 4.34171 13.3536 4.14645L10.1716 0.964466C9.97631 0.769204 9.65973 0.769204 9.46447 0.964466C9.2692 1.15973 9.2692 1.47631 9.46447 1.67157L12.2929 4.5L9.46447 7.32843C9.2692 7.52369 9.2692 7.84027 9.46447 8.03553C9.65973 8.2308 9.97631 8.2308 10.1716 8.03553L13.3536 4.85355ZM0 5H13V4H0V5Z"
+                    fill="white" />
+                </svg>
+              </button>
+            </div>
+            <div class="training__swiper swiper">
+              <div class="training__swiper-wrapper swiper-wrapper">
+                <div class="training__swiper-slide swiper-slide" tabindex="0">
+                  <picture class="training__picture">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="data:image/webp;base64,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 1x, ./assets/training-first-desktop@2x-C7iGbLnh.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="data:image/webp;base64,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 1x, ./assets/training-first-tablet@2x-CT2y2IxX.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="data:image/webp;base64,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 1x, ./assets/training-first-mobile@2x-CaZdhECu.webp 2x">
+
+                    <source type="image/png" media="(min-width: 1440px)" srcset="./assets/training-first-desktop@1x-DkYLser2.jpg 1x, ./assets/training-first-desktop@2x-lSE3IClM.jpg 2x">
+                    <source type="image/png" media="(min-width: 768px)" srcset="./assets/training-first-tablet@1x-DAG9LdO3.jpg 1x, ./assets/training-first-tablet@2x-CM-hmMwi.jpg 2x">
+                    <img class="training__picture-img" src="./assets/training-first-mobile@1x-fdQmeDYf.jpg"
+                      srcset="./assets/training-first-mobile@2x-CxLB5eXV.jpg 2x" alt="Фотография Александра
+                      Прокофьева" width="260" height="200">
+                  </picture>
+                  <div class="training__info">
+                    <div class="training__name-wrapper">
+                      <h4>Александр <br> Прокофьев</h4>
+                      <a class="training__link" href="#" aria-label="Страница инструктора в ВК.">
+                        <svg width="14" height="8">
+                          <use href="./assets/sprite-BHu-42HL.svg#vk"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <p>
+                      Строгий и внимательный инструктор,
+                      весёлый и&nbsp;общительный человек.
+                      Любит природу.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="training__swiper-slide swiper-slide" tabindex="0">
+                  <picture class="training__picture">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="data:image/webp;base64,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 1x, ./assets/training-second-desktop@2x-Djaalrts.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="data:image/webp;base64,UklGRj4FAABXRUJQVlA4IDIFAACwHACdASpbAGQAPm0wlEakIyIhKTgLeIANiWNrlVsahXbYIS/zsuelPbtc8bpy+9Ff51hJidppExwMe8/6eDDHaEG0L3rN6bCe14k4yZE+1UbSGtcvPNnv7WKA52/+7Fyze5+xzxkcg4eIa9qS9iWvH90/ac8dUlXQbbQDoqnju/yqChNcKfYdjcycuEjO7Pa43c60GeMX4vLwGB5JmiGDGyJ+NUkJhSeA4WlBlnCvk8mIomPj0EJ9nn6K+J3xcLJueBFNTJBXzpTPSgqzKJNsXLVcSND92M6992XmAwO6LYMBRLPoZunZ7fYCOpKAAP73dzP0I8oZ9V4ZxTknC7F4MRtQExfyQJ651KxvXS4HYfnjOp8FNhn/FiqieK03WDgLxQg32+O4owCjiUzkRbLb1j1s7tT/aKLw6cFPXGa/EB3xZkdkdZaVFP5y0honjIzDjqt8zWKdwGjYr2wSqX5mrExQT3n1Di0yGD632/h6d8KvVcS/oX2OlzZO9ubyMa9oGppEijZT1lia//ayTvl0+btaRIvcTaEAnNx3lsqYW/xWyxA3y989YhrHWDZnGGqCgyZCme5eR68sNNHYOQeNx2UfWdu74MiTrI3+98OFjWbH2N+GavIG38oqBoVsbPN6LWpixtqbwV9BmCi1mf1cS+yteU8I7zRU9UG1lkW4pdM9y8whgoNiwtKWZhXZJKi77Z6gRFl5qJqVlllMdqh+HDxBj1BJOHQ8H2yCfc02g2SOaYGZsrAqy3yPY911kZtac5E2LkeANIvM3QF7KxMbLxOzfQUZvrCoAKZxQYrUzHrkl+QmkPOYllIayo2Ra+mHTaAYNUyvi6AYlAJiU6bGydAnkUWXh/OMTPvFlV6oE1S0rE81RAAezB2X8YJC0+3peaMZ4KU1Kbmmy4y8jDOlFTr2uoFvqZ/a7zh18U0XejI4EMCds2xe67eatqJLlA/iZUpZ8o/3r5YfeR5Bl68G3HN76hf15HElAtce4bT8YTsDrUd3kU3fxtK68hpl5bAjoaTRo6dmHD1qAM5awPBakXgGt32syTFuORmZtdBTzsoGpQnGK/l3f9zNeZXSNCH9vMnnNMLdgieKw8fvAy9O4CC7XfxDqz3mLbk7+6uoG+KRHvK8oBrtVYXZmnWex8ZikgLS702V5tgHu5PYoGbYFJj/WiSUQHJmtX8dEN8OmlVkrJC5wCa9/sigpb+Qk+71nJOkvRMVXvJ1kOMLdPIzIuEsn2fXyiES93TryWm7jwkPmR3MOGMWkEJbR3yRBbWTOvg+3uy/66qm21WWTR1Clk97+wo3CmeitLx/ubucSqdGfLoUkNjcxJ3ptUNSPot6k6gzGA1Tl+lePqHRxErZ3H71Nq8HFedvXr2KViyxyQN/opDkjARqtge6tkTKD92BYPGXCk39KFv908ieKsJUotgHOt/0qISX+4sFg6j7pcnfYiRQWIP5S34DYywHKhA7hIXnvzDgjERmZLgQvln5FUy7FXEFOjrYje/as6OnvBBLYZrDk0xc34+6kwEYZaMKAtSLsSUzcgErrw7hfwlM9l55nPQuGqsVQTIovrtlGVwgvthvEQKAYmsi3jzo2h6Reh7zAXIFnIus/6h1UurbLxUHwU9RfCrYFAl+gv1LSTTKdxfV3q6JVvPRuyMhh+74kVNi1d179bN5wa+pfUV92b54uROlJffZ0IbinUl7YAhit7q+3YemCrZAwcJ0U4KMMErvPuFAXHxhX5sA/Qb88ce0rt8EEsvvKkpLcfAAAAAA 1x, ./assets/training-second-tablet@2x-BcOsqyFT.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="data:image/webp;base64,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 1x, ./assets/training-second-mobile@2x-Df7xHGzV.webp 2x">
+
+                    <source type="image/png" media="(min-width: 1440px)" srcset="./assets/training-second-desktop@1x-BeoCSCLw.jpg 1x, ./assets/training-second-desktop@2x-hbUm2GrX.jpg 2x">
+                    <source type="image/png" media="(min-width: 768px)" srcset="./assets/training-second-tablet@1x-DNuUINmu.jpg 1x, ./assets/training-second-tablet@2x-Cq-ocxWj.jpg 2x">
+                    <img class="training__picture-img" src="./assets/training-second-mobile@1x-TsR84bkO.jpg"
+                      srcset="./assets/training-second-mobile@2x-DNlXBcX1.jpg 2x" alt="Фотография Светланы
+                      Афиногеновой" width="260" height="200">
+                  </picture>
+                  <div class="training__info">
+                    <div class="training__name-wrapper">
+                      <h4>Светлана <br> Афиногенова</h4>
+                      <a class="training__link" href="#" aria-label="Страница инструктора в ВК.">
+                        <svg width="14" height="8">
+                          <use href="./assets/sprite-BHu-42HL.svg#vk"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <p>
+                      Видеть мир вокруг, познавать
+                      его&nbsp;опасности, находить друг друга,
+                      становиться ближе, чувствовать —
+                      в&nbsp;этом назначение жизни.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="training__swiper-slide swiper-slide" tabindex="0">
+                  <picture class="training__picture">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="data:image/webp;base64,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 1x, ./assets/training-third-desktop@2x-DyXFn08Z.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="data:image/webp;base64,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 1x, ./assets/training-third-tablet@2x-vEGK0o5b.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="data:image/webp;base64,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 1x, ./assets/training-third-mobile@2x-Ft2PTLd3.webp 2x">
+
+                    <source type="image/png" media="(min-width: 1440px)" srcset="./assets/training-third-desktop@1x-rM0eWdHd.jpg 1x, ./assets/training-third-desktop@2x-CzvtpM1K.jpg 2x">
+                    <source type="image/png" media="(min-width: 768px)" srcset="./assets/training-third-tablet@1x-dw1Av65J.jpg 1x, ./assets/training-third-tablet@2x-BbUhcqM_.jpg 2x">
+                    <img class="training__picture-img" src="./assets/training-third-mobile@1x-1KPwVge2.jpg"
+                      srcset="./assets/training-third-mobile@2x-BQBur3Ge.jpg 2x" alt="Фотография Надежды
+                      Колесниченко" width="260" height="200">
+                  </picture>
+                  <div class="training__info">
+                    <div class="training__name-wrapper">
+                      <h4>Надежда <br> Колесниченко</h4>
+                      <a class="training__link" href="#" aria-label="Страница инструктора в ВК.">
+                        <svg width="14" height="8">
+                          <use href="./assets/sprite-BHu-42HL.svg#vk"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <p>
+                      Участники говорят, что&nbsp;Надежда
+                      ответственная, приятная в общении,
+                      и&nbsp;в&nbsp;поездках с&nbsp;ней&nbsp;чувствуешь себя
+                      спокойно и уверенно.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="training__swiper-slide swiper-slide" tabindex="0">
+                  <picture class="training__picture">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="data:image/webp;base64,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 1x, ./assets/training-fourth-desktop@2x-B4VwImX_.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="data:image/webp;base64,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 1x, ./assets/training-fourth-tablet@2x-BIunHs4u.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="data:image/webp;base64,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 1x, ./assets/training-fourth-mobile@2x-D521fQLQ.webp 2x">
+
+                    <source type="image/png" media="(min-width: 1440px)" srcset="./assets/training-fourth-desktop@1x-CyBFnl4Y.jpg 1x, ./assets/training-fourth-desktop@2x-DhYQKndO.jpg 2x">
+                    <source type="image/png" media="(min-width: 768px)" srcset="./assets/training-fourth-tablet@1x-Dt27o-QA.jpg 1x, ./assets/training-fourth-tablet@2x-ZNtXmPvW.jpg 2x">
+                    <img class="training__picture-img" src="./assets/training-fourth-mobile@1x-BVH2ziZM.jpg"
+                      srcset="./assets/training-fourth-mobile@2x-_e1hl8AG.jpg 2x" alt="Фотография Федора
+                      Кайгородова" width="260" height="200">
+                  </picture>
+                  <div class="training__info">
+                    <div class="training__name-wrapper">
+                      <h4>Федор <br> Кайгородов</h4>
+                      <a class="training__link" href="#" aria-label="Страница инструктора в ВК.">
+                        <svg width="14" height="8">
+                          <use href="./assets/sprite-BHu-42HL.svg#vk"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <p>
+                      Опыт походов: Ходит в походы
+                      с&nbsp;2001&nbsp;года. В России побывал в горных
+                      районах Хибины, Архыз, много
+                      путешествует по Европе.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="training__swiper-slide swiper-slide" tabindex="0">
+                  <picture class="training__picture">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="data:image/webp;base64,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 1x, ./assets/training-fifth-desktop@2x-DBjW4kA1.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="data:image/webp;base64,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 1x, ./assets/training-fifth-tablet@2x-BrX7oY_G.webp 2x">
+                    <source type="image/webp" media="(min-width: 320px)" srcset="data:image/webp;base64,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 1x, ./assets/training-fifth-mobile@2x-pV8a1Yrq.webp 2x">
+
+                    <source type="image/png" media="(min-width: 1440px)" srcset="./assets/training-fifth-desktop@1x-amI2M2aP.jpg 1x, ./assets/training-fifth-desktop@2x-DYyn-CEd.jpg 2x">
+                    <source type="image/png" media="(min-width: 768px)" srcset="./assets/training-fifth-tablet@1x-DDkawm1e.jpg 1x, ./assets/training-fifth-tablet@2x-DwTOl95D.jpg 2x">
+                    <img class="training__picture-img" src="./assets/training-fifth-mobile@1x-B5Q_6IU1.jpg"
+                      srcset="./assets/training-fifth-mobile@2x-0yOTmjR9.jpg 2x" alt="Фотография Федора
+                      Кайгородова" width="260" height="200">
+                  </picture>
+                  <div class="training__info">
+                    <div class="training__name-wrapper">
+                      <h4>Даниэль <br> Васнецов</h4>
+                      <a class="training__link" href="#" aria-label="Страница инструктора в ВК.">
+                        <svg width="14" height="8">
+                          <use href="./assets/sprite-BHu-42HL.svg#vk"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <p>
+                      Покорял самые сложные вершины.
+                      Выбирался из под лавин, дружит с
+                      медведями и не только.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="training__process">
+            <h3 class="training__process-header">Процесс обучения</h3>
+            <ul class="training__process-list">
+              <li class="training__process-item training__process-item--map">
+                <p class="training__process-text">Изучение спортивного туристского движения</p>
+              </li>
+              <li class="training__process-item training__process-item--boots">
+                <p class="training__process-text">Подготовка и&nbsp;техническое снаряжение в&nbsp;походах</p>
+              </li>
+              <li class="training__process-item training__process-item--tree">
+                <p class="training__process-text">Лекции по&nbsp;окружающей среде, экологии и&nbsp;гигиене</p>
+              </li>
+              <li class="training__process-item training__process-item--mountain">
+                <p class="training__process-text">Разъяснение сложности горных препятствий</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </section>
+      <section class="about" id="about" data-test="about">
+        <div class="about__wrapper">
+          <div class="about__img-wrapper">
+            <picture class="about__picture">
+              <source type="image/webp" media="(min-width: 1440px)" srcset="./assets/about-desktop@1x-6SD1d--i.webp 1x, ./assets/about-desktop@2x-C7EpYJvN.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./assets/about-tablet@1x-CmlTpFkM.webp 1x, ./assets/about-tablet@2x-H_q6x7kc.webp 2x">
+              <source type="image/webp" media="(min-width: 320px)" srcset="./assets/about-mobile@1x-CDWWMgzM.webp 1x, ./assets/about-mobile@2x-DQb03JHr.webp 2x">
+
+              <source type="image/png" media="(min-width: 1440px)" srcset="./assets/about-desktop@1x-ITZ1crBu.jpg 1x, ./assets/about-desktop@2x-G-oLfXVy.jpg 2x">
+              <source type="image/png" media="(min-width: 768px)" srcset="./assets/about-tablet@1x-7yDVOTNp.jpg 1x, ./assets/about-tablet@2x-BJ50jzVI.jpg 2x">
+              <img class="about__picture-img" src="./assets/about-mobile@1x-fLiMdbCZ.jpg"
+                srcset="./assets/about-mobile@2x-BInk0QJ-.jpg 2x" alt="Фотография пяти человек в горах" width="350" height="398">
+            </picture>
+          </div>
+          <div class="about__content-wrapper">
+            <h2 class="about__header-small title">О нас</h2>
+            <span class="about__header-big title title--big">О нас</span>
+            <div class="about__info">
+              <h3>История компании</h3>
+              <p>
+                В далёком 2000 году мы начали заниматься туризмом — походы, поездки,
+                восхождения, нам&nbsp;это&nbsp;настолько понравилось, что&nbsp;мы&nbsp;этим стали жить.
+                Спустя&nbsp;5&nbsp;лет, в&nbsp;2005&nbsp;году мы основали компанию, чтобы&nbsp;показывать людям
+                удивительные места нашей страны.
+              </p>
+              <h3>Наша цель</h3>
+              <p>
+                Подарить вам незабываемые впечатления от похода в горы. Мы&nbsp;берём на себя
+                все&nbsp;организационные вопросы. При&nbsp;организации мы&nbsp;обязательно учтём
+                все&nbsp;ваши пожелания. Вам&nbsp;останется только наслаждаться незабываемым
+                приключением в&nbsp;приятной компании.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
