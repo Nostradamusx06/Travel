@@ -7,13 +7,13 @@ import { Navigation } from 'swiper/modules';
     const swiperAdvantages = new Swiper('.advantages__swiper', {
       autoHeight: true,
       modules: [Navigation],
-      speed: 600,
+      // speed: 600,
       loop: true,
 
       slidesPerView: 'auto',
       slidesPerGroup: 2,
-      initialSlide: 3,
-      centeredSlides: true,
+      // initialSlide: 4,
+      // centeredSlides: true,
 
       centeredSlidesBounds: true,
       navigation: {
@@ -22,14 +22,9 @@ import { Navigation } from 'swiper/modules';
         disabledClass: 'button--disabled',
       },
 
-      keyboard: {
-        enabled: true,
-        onlyInViewport: true,
-      },
-
       breakpoints: {
         1440: {
-          spaceBetween: 28,
+          spaceBetween: 29,
           simulateTouch: false,
         },
       },
@@ -41,11 +36,6 @@ import { Navigation } from 'swiper/modules';
       }
     };
     breakpointSlider();
-
-    swiperAdvantages.slideNext(0);
-    setTimeout(() => {
-      swiperAdvantages.slidePrev(0);
-    }, 100);
 
     return swiperAdvantages;
   };
