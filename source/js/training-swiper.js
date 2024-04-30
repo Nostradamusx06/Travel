@@ -11,7 +11,7 @@ import { Navigation } from 'swiper/modules';
       navigation: {
         nextEl: '.training__button--next',
         prevEl: '.training__button--prev',
-        disabledClass: 'training__button--disabled',
+        disabledClass: 'button--disabled',
       },
 
       keyboard: {

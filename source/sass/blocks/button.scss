@@ -1,8 +1,6 @@
 .button {
-  display: inline-flex;
-  justify-content: center;
-
-  padding: 20px;
+  width: 37px;
+  height: 35px;
 
   cursor: pointer;
   user-select: none;
@@ -10,37 +8,49 @@
   word-break: break-word;
 
   color: $color-default-white;
-  border: none;
+  border: 1px solid transparent;
   outline-offset: 3px;
   background-color: $color-navy-blue;
 
   &:hover {
-    color: $color-resolution-blue;
-    border: 2px solid $color-resolution-blue;
-    padding: 18px;
+    border: 1px solid $color-resolution-blue;
     background-color: $color-default-white;
+
+    svg path {
+      fill: $color-resolution-blue;
+    }
   }
 
   &:focus {
-    color: $color-resolution-blue;
     outline: none;
     background-color: $color-default-white;
+
+    svg path {
+      fill: $color-resolution-blue;
+    }
   }
 
   &:active {
-    color: $color-default-white;
     background-color: $color-resolution-blue;
+
+    svg path {
+      fill: $color-default-white;
+    }
   }
 
   &--disabled {
     pointer-events: none;
 
-    color: $color-default-white;
+    border: 1px solid $color-nobel;
     background-color: $color-nobel;
 
     &:focus {
-      color: $color-default-white;
       background-color: $color-nobel;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 5px;
+    padding-bottom: 3px;
   }
 }

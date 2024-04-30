@@ -161,6 +161,20 @@
   width: 140px;
   padding: 21px 20px 19px;
 
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+  word-break: break-word;
+
+  color: $color-default-white;
+  border: none;
+  outline-offset: 3px;
+
+  display: inline-flex;
+  justify-content: center;
+
+  background-color: $color-navy-blue;
+
   @media (min-width: $tablet-width) {
     padding: 20px;
   }
