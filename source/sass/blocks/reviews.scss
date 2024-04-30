@@ -5,25 +5,25 @@
 
   max-width: 320px;
   margin: 0 auto;
-  padding: 36px 0;
+  padding: 36px 0 0;
 
   color: $color-elephant;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
-    padding: 60px 0 46px;
+    padding: 60px 0 0;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1320px;
-    padding: 145px 0 84px;
+    padding: 145px 0 0;
     padding-left: 120px;
 
     &::before {
       position: absolute;
       z-index: -1;
-      right: 550px;
-      bottom: -108px;
+      right: 551px;
+      bottom: -193px;
 
       width: 1200px;
       height: 401px;
@@ -35,34 +35,17 @@
       background-position: left;
       background-size: contain;
     }
-
-    &::after {
-      position: absolute;
-      z-index: -1;
-      right: -339px;
-      bottom: -154px;
-
-      width: 788px;
-      height: 263px;
-
-      content: "";
-
-      background-image: image-set(url("../img/reviews/clouds-right@1x.webp") type("image/webp") 1x, url("../img/reviews/clouds-right@2x.webp") type("image/webp") 2x, url("../img/reviews/clouds-right@1x.png") 1x, url("../img/reviews/clouds-right@2x.png") 2x,);
-      background-repeat: no-repeat;
-      background-position: right;
-      background-size: contain;
-    }
   }
 }
 
 .reviews__swiper.swiper {
   width: 320px;
   margin: 0 auto;
-  padding: 23px 15px;
+  padding: 23px 15px 20px;
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    padding: 35px 0 35px 45px;
+    padding: 35px 0 40px 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -231,26 +214,6 @@
   @media (min-width: $desktop-width) {
     top: 145px;
     right: 120px;
-  }
-}
-
-.reviews__button {
-  width: 37px;
-  height: 35px;
-
-  border: 1px solid transparent;
-  background-color: $color-navy-blue;
-
-  &--disabled {
-    pointer-events: none;
-
-    border: 1px solid $color-nobel;
-    background-color: $color-nobel;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-right: 5px;
-    padding-bottom: 3px;
   }
 }
 

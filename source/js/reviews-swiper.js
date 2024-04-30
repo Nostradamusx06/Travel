@@ -15,7 +15,7 @@ import { Navigation } from 'swiper/modules';
       navigation: {
         nextEl: '.reviews__button--next',
         prevEl: '.reviews__button--prev',
-        disabledClass: 'reviews__button--disabled',
+        disabledClass: 'button--disabled',
       },
 
       keyboard: {

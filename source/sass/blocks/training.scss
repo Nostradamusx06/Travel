@@ -103,26 +103,6 @@
   }
 }
 
-.training__button {
-  width: 37px;
-  height: 35px;
-
-  border: 1px solid transparent;
-  background-color: $color-navy-blue;
-
-  &--disabled {
-    pointer-events: none;
-
-    border: 1px solid $color-nobel;
-    background-color: $color-nobel;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-right: 5px;
-    padding-bottom: 3px;
-  }
-}
-
 .training__button--prev {
   padding-right: 7px;
 
