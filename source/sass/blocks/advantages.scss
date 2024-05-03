@@ -8,7 +8,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
-    padding: 60px 45px;
+    padding: 60px 45px 9px;
     overflow: hidden;
 
     display: flex;
@@ -57,7 +57,7 @@
     overflow: hidden;
 
     margin: 0 auto;
-    padding: 135px 0 100px;
+    padding: 135px 0 185px;
 
     display: flex;
     flex-direction: column;
@@ -87,7 +87,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // max-width: 1200px;
     margin: 0;
     padding-bottom: 50px;
   }
@@ -470,7 +469,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     right: 681px;
-    bottom: 15px;
+    bottom: 100px;
 
     display: block;
   }
