@@ -221,13 +221,13 @@
 
     &--time {
       &::before {
-        background-image: url("../../img/sprite/sprite.svg#moon");
+        background-image: url("/__spritemap#sprite-moon-view");
       }
     }
 
     &--complexity {
       &::before {
-        background-image: url("../../img/sprite/sprite.svg#level");
+        background-image: url("/__spritemap#sprite-level-view");
       }
     }
   }
