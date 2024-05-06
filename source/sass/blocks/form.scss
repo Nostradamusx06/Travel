@@ -1,0 +1,298 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 558px;
+  padding: 40px 31px;
+
+  background-image: image-set(url("../../img/form/form-mobile@2x.webp") type("image/webp") 2x, url("../../img/form/form-mobile@1x.webp") type("image/webp") 1x, url("../../img/form/form-mobile@2x.jpg") type("image/jpg") 2x, url("../../img/form/form-mobile@1x.jpg") type("image/jpg") 1x);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media(min-width: $tablet-width) {
+    min-height: 600px;
+    padding: 40px;
+
+    background-image: image-set(url("../../img/form/form-tablet@2x.webp") type("image/webp") 2x, url("../../img/form/form-tablet@1x.webp") type("image/webp") 1x, url("../../img/form/form-tablet@2x.jpg") type("image/jpg") 2x, url("../../img/form/form-tablet@1x.jpg") type("image/jpg") 1x);
+  }
+
+  @media(min-width: $desktop-width) {
+    min-height: 680px;
+    padding: 40px;
+
+    background-image: image-set(url("../../img/form/form-desktop@2x.webp") type("image/webp") 2x, url("../../img/form/form-desktop@1x.webp") type("image/webp") 1x, url("../../img/form/form-desktop@2x.jpg") type("image/jpg") 2x, url("../../img/form/form-desktop@1x.jpg") type("image/jpg") 1x);
+  }
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  padding-top: 134px;
+
+  color: $color-default-white;
+
+  @media(min-width: $tablet-width) {
+    padding-top: 144px;
+  }
+
+  @media(min-width: $desktop-width) {
+    padding-top: 257px;
+  }
+
+  h2 {
+    font-size: $font-line-size-bear;
+    font-weight: $extra-bold;
+    line-height: $font-line-size-bear;
+
+    max-width: 258px;
+    margin: 0;
+    padding-bottom: 20px;
+
+    text-align: center;
+
+    @media(min-width: $tablet-width) {
+      font-size: $font-line-size-alligator;
+      line-height: $font-line-size-alligator;
+
+      max-width: 355px;
+      padding-bottom: 28px;
+    }
+
+    @media(min-width: $desktop-width) {
+      font-size: $font-line-size-anaconda;
+      line-height: $font-line-size-anaconda;
+
+      max-width: 1360px;
+      padding-bottom: 16px;
+    }
+  }
+
+  p {
+    font-size: $font-line-size-mouse;
+    font-weight: $regular;
+    line-height: $font-line-size-wolf;
+
+    max-width: 258px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+
+    text-align: center;
+
+    @media(min-width: $tablet-width) {
+      font-size: $font-line-size-fox;
+      line-height: $font-line-size-lion;
+
+      max-width: 360px;
+      padding-bottom: 24px;
+    }
+
+    @media(min-width: $desktop-width) {
+      max-width: 1360px;
+      padding-bottom: 39px;
+    }
+
+    br {
+      @media(min-width: $tablet-width) {
+        display: none;
+      }
+    }
+  }
+}
+
+.form__wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+
+  @media(min-width: $tablet-width) {
+    width: 300px;
+
+    gap: 10px;
+  }
+
+  @media(min-width: $desktop-width) {
+    flex-direction: row;
+
+    width: 960px;
+
+    gap: 30px;
+  }
+}
+
+.form__phone,
+.form__mail {
+  font-size: $font-line-size-fox;
+  font-weight: $regular;
+  line-height: $font-line-size-fox;
+
+  display: block;
+
+  width: 228px;
+  height: 48px;
+  padding: 0px 14px;
+
+  border: 1px solid rgba(2, 102, 193, 0.10);
+  background-color: $color-default-white;
+
+  @media(min-width: $tablet-width) {
+    width: 298px;
+    height: 53px;
+    padding: 1px 27px 1px 33px;
+
+    border-radius: 2px;
+  }
+}
+
+.form__phone-label,
+.form__mail-label {
+  position: absolute;
+
+  top: 17px;
+  left: 15px;
+  opacity: 0.5;
+  color: $color-elephant;
+
+  @media(min-width: $tablet-width) {
+    top: 20px;
+    left: 30px;
+  }
+}
+
+.form__mail-label {
+  top: 75px;
+  left: 15px;
+
+  @media(min-width: $tablet-width) {
+    top: 87px;
+    left: 30px;
+  }
+
+  @media(min-width: $desktop-width) {
+    top: 20px;
+    left: 420px;
+  }
+}
+
+.form__phone:valid,
+.form__mail:valid {
+  color: rgba($color-navy-blue, 0.5);
+  border-color: $color-navy-blue;
+}
+
+.form__phone:focus+.form__phone-label,
+.form__mail:focus+.form__mail-label,
+.form__phone:valid+.form__phone-label,
+.form__mail:valid+.form__mail-label,
+.form__phone:invalid:not(:placeholder-shown)+.form__phone-label,
+.form__mail:invalid:not(:placeholder-shown)+.form__mail-label {
+  font-size: 0;
+}
+
+.form__phone:hover,
+.form__mail:hover {
+  border: 1px solid $color-navy-blue;
+
+  @media(min-width: $tablet-width) {
+    border-radius: 2px;
+  }
+}
+
+.form__phone:focus,
+.form__mail:focus {
+  border: 1px solid $color-elephant;
+  border-radius: 2px;
+  outline: none;
+
+  .form__phone-label,
+  .form__mail-label {
+    color: transparent;
+  }
+}
+
+.form__phone:disabled,
+.form__mail:disabled {
+  border-color: $color-nobel;
+}
+
+.form__phone:disabled+.form__phone-label,
+.form__mail:disabled+.form__mail-label {
+  color: $color-nobel;
+}
+
+.form__mail--error.form__mail:valid,
+.form__phone--error.form__phone:valid {
+  border-color: $color-torch-red;
+  color: $color-nobel;
+}
+
+.form__button {
+  font-size: $font-line-size-fox;
+  font-weight: $medium;
+  line-height: $font-line-size-fox;
+
+  display: inline-flex;
+  justify-content: center;
+
+  width: 258px;
+  padding: 21px 20px 19px;
+
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+  word-break: break-word;
+
+  color: $color-default-white;
+  border: 1px solid transparent;
+  outline-offset: 3px;
+  background-color: $color-navy-blue;
+
+  @media(min-width: $tablet-width) {
+    width: 360px;
+    padding-top: 20px;
+
+    border-radius: 7px;
+  }
+
+  @media(min-width: $desktop-width) {
+    width: 180px;
+    padding: 20px;
+    padding-bottom: 18px;
+
+    border-radius: 0;
+  }
+
+  &:hover {
+    color: $color-resolution-blue;
+    border: 1px solid $color-resolution-blue;
+    background-color: $color-default-white;
+  }
+
+  &:focus {
+    color: $color-resolution-blue;
+    outline: none;
+    background-color: $color-default-white;
+  }
+
+  &:active {
+    color: $color-default-white;
+    background-color: $color-resolution-blue;
+  }
+
+  &--disabled {
+    pointer-events: none;
+
+    border: 1px solid $color-nobel;
+    background-color: $color-nobel;
+
+    &:focus {
+      color: $color-default-white;
+      background-color: $color-nobel;
+    }
+  }
+}
