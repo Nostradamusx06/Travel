@@ -1054,6 +1054,52 @@
         </div>
       </section>
     </main>
+
+    <div data-test="footer">
+
+      <section class="contacts" id="contacts">
+        <div class="contacts__wrapper">
+          <div class="contacts__text-wrapper">
+            <h2 class="contacts__header-small title">Контакты</h2>
+            <span class="contacts__header-big title title--big">Контакты</span>
+            <p>
+              Свяжитесь с нами любым удобным для вас способом
+              или приходите к нам в гости. Мы будем рады поделиться
+              увлекательными историями и подобрать для вас тур.
+            </p>
+            <ul class="contacts__list">
+              <li class="contacts__item contacts__item--phone">
+                <h3 class="contacts__item-header">Телефон</h3>
+                <a class="contacts__description" href="tel:+79837454545">+7 983 745-45-45</a>
+              </li>
+              <li class="contacts__item contacts__item--mail">
+                <h3 class="contacts__item-header">Email</h3>
+                <a class="contacts__description" href="mailto:info@lifetour.com">info@lifetour.com</a>
+              </li>
+              <li class="contacts__item contacts__item--address">
+                <h3 class="contacts__item-header">Адрес</h3>
+                <span class="contacts__description">г. Москва, пр-т Мира, д. 14, офис 101</span>
+              </li>
+            </ul>
+          </div>
+          <picture class="contacts__picture">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/map/map-desktop@1x.webp 1x,
+            img/map/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map/map-tablet@1x.webp 1x,
+            img/map/map-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 320px)" srcset="img/map/map-mobile@1x.webp 1x,
+            img/map/map-mobile@2x.webp 2x">
+
+            <source type="image/png" media="(min-width: 1440px)" srcset="img/map/map-desktop@1x.jpg 1x,
+            img/map/map-desktop@2x.jpg 2x">
+            <source type="image/png" media="(min-width: 768px)" srcset="img/map/map-tablet@1x.jpg 1x,
+            img/map/map-tablet@2x.jpg 2x">
+            <img class="contacts__picture-img" src="img/map/map-mobile@1x.jpg" srcset="img/map/map-mobile@2x.jpg 2x"
+              alt="Местоположение офиса компании LifeTour." width="320" height="343" loading="lazy">
+          </picture>
+        </div>
+      </section>
+    </div>
   </div>
   <script type="module" src="js/main.js"></script>
 </body>
