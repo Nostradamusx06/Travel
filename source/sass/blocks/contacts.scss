@@ -6,17 +6,19 @@
 
   max-width: 320px;
   margin: 0 auto;
+  padding-bottom: 19px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     max-width: 768px;
+    padding-bottom: 39px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
 
-    max-width: 1440px;
-    padding: 123px 120px;
+    max-width: 1200px;
+    padding: 123px 120px 60px;
   }
 }
 
@@ -26,11 +28,11 @@
 
   padding: 36px 15px 0;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 60px 45px 10px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 0;
   }
 
@@ -43,7 +45,7 @@
     margin: 0;
     padding-bottom: 30px;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       font-size: $font-line-size-fox;
       line-height: $font-line-size-lion;
 
@@ -51,7 +53,7 @@
       padding-bottom: 40px;
     }
 
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       max-width: 490px;
       padding-bottom: 49px;
     }
@@ -61,23 +63,23 @@
 .contacts__header-small {
   padding-bottom: 29px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-bottom: 21px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-bottom: 23px;
   }
 }
 
 .contacts__header-big {
-  top: 20px;
+  top: 23px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     top: 45px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     top: 106px;
   }
 }
@@ -93,7 +95,7 @@
 
   list-style-type: none;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
 
     width: 678px;
@@ -102,7 +104,7 @@
     gap: 74px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     flex-direction: column;
 
     width: 500px;
@@ -116,11 +118,11 @@
 
   padding-bottom: 30px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     min-width: 119px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-bottom: 34px;
   }
 
@@ -137,7 +139,7 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       top: -1px;
       left: -34px;
 
@@ -145,7 +147,7 @@
       height: 24px;
     }
 
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       top: 12px;
       left: -56px;
 
@@ -175,14 +177,14 @@
   margin: 0;
   padding-bottom: 8px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: $font-line-size-fox;
     line-height: $font-line-size-fox;
 
     padding-bottom: 5px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     font-size: $font-line-size-wolf;
     line-height: $font-line-size-wolf;
 
@@ -201,11 +203,11 @@
 
   color: inherit;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     line-height: $font-line-size-bear;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     font-size: $font-line-size-fox;
     line-height: $font-line-size-lion;
   }
@@ -219,12 +221,12 @@
 
   background-color: $color-nobel;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 768px;
     height: 340px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 600px;
     height: 324px;
     margin-top: 26px;
@@ -235,12 +237,12 @@
   width: 320px;
   height: 343px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 768px;
     height: 340px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 600px;
     height: 324px;
   }
