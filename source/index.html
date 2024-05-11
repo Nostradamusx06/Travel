@@ -971,10 +971,14 @@
           <p>Заполните форму и наш оператор свяжется<br> с вами для консультации.</p>
           <form class="form__wrapper" action="https://echo.htmlacademy.ru" autocomplete="on" method="post">
 
-            <input class="form__phone" id="phone" type="tel" name="phone" maxlength="18" placeholder=" " required>
+            <input class="form__phone" id="phone" type="tel" name="phone" minlength="5" maxlength="18"
+              title="Введите от 5 до 18 символов. Буквы запрещены." placeholder=" " pattern="[^a-zA-Zа-яА-ЯёЁ]{5,}$"
+              required>
             <label class="form__phone-label" for="phone">Телефон</label>
 
-            <input class="form__mail" id="mail" type="text" name="email" placeholder=" " required>
+            <input class="form__mail" id="mail" type="text" name="email" minlength="5" title="Пример: somone@example.ru"
+              placeholder=" " pattern="[a-zA-Zа-яА-ЯёЁ0-9._%+\-]+@[a-zA-Zа-яА-ЯёЁ0-9.\-]+\.[a-zA-Zа-яА-ЯёЁ]{2,}$"
+              required>
             <label class="form__mail-label" for="mail">Email</label>
 
             <button class="form__button" type="submit">Отправить</button>

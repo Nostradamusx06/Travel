@@ -1,43 +1,79 @@
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Manipulation } from 'swiper/modules';
 
-(function () {
-  const tablet = window.matchMedia('(max-width: 769px)');
-  const initAdvantagesSwiper = () => {
-    const swiperAdvantages = new Swiper('.advantages__swiper', {
-      autoHeight: true,
-      modules: [Navigation],
-      // speed: 600,
-      loop: true,
+const mobile = window.matchMedia('(min-width: 0px) and (max-width: 767px)');
+const tablet = window.matchMedia('(min-width: 768px) and (max-width: 1439px)');
+const desktop = window.matchMedia('(min-width: 1440px)');
 
-      slidesPerView: 'auto',
-      slidesPerGroup: 2,
-      // initialSlide: 4,
-      // centeredSlides: true,
+const advantages = document.querySelector('.advantages__swiper');
+const slider = advantages.querySelector('.advantages__swiper-wrapper');
+const slides = advantages.querySelectorAll('.advantages__swiper-slide');
+const clones = [];
 
-      centeredSlidesBounds: true,
-      navigation: {
-        nextEl: '.advantages__button--next',
-        prevEl: '.advantages__button--prev',
-        disabledClass: 'button--disabled',
-      },
+const addClassArray = (elems, classs) => {
+  elems.forEach((elem) => {
+    elem.classList.add(classs);
+  });
+};
 
-      breakpoints: {
-        1440: {
-          spaceBetween: 29,
-          simulateTouch: false,
-        },
-      },
-    });
+const resetClassArray = (array, classs) => {
+  array.forEach((elem) => {
+    if (elem.classList.contains(classs)) {
+      elem.classList.remove(classs);
+    }
+  });
+};
 
-    const breakpointSlider = () => {
-      if (tablet.matches && swiperAdvantages) {
-        swiperAdvantages.destroy();
-      }
-    };
-    breakpointSlider();
+const cloneSlides = (parent, elems, array) => {
+  elems.forEach((elem) => {
+    const clone = elem.cloneNode(true);
+    clone.setAttribute('aria-hidden', true);
+    array.push(clone);
+    parent.appendChild(clone);
+  });
+};
 
-    return swiperAdvantages;
-  };
-  initAdvantagesSwiper();
-})();
+cloneSlides(slider, slides, clones);
+
+const swiper = new Swiper('.advantages__swiper', {
+  modules: [Navigation, Manipulation],
+  init: false,
+  loop: true,
+  watchSlidesProgress: true,
+  slidesPerView: 'auto',
+  slidesPerGroup: 2,
+  speed: 600,
+  centeredSlides: true,
+
+  navigation: {
+    nextEl: '.advantages__button--next',
+    prevEl: '.advantages__button--prev',
+  },
+  breakpoints: {
+    1440: {
+      initialSlide: 2,
+      spaceBetween: 30,
+      autoHeight: false,
+      simulateTouch: false,
+    },
+  },
+});
+
+const onScreen = () => {
+  if (mobile.matches) {
+    swiper.disable();
+    addClassArray(clones, 'advantages__swiper-slide--none');
+  }
+  if (tablet.matches) {
+    swiper.disable();
+    addClassArray(clones, 'advantages__swiper-slide--none');
+  }
+  if (desktop.matches) {
+    resetClassArray(clones, 'advantages__swiper-slide--none');
+    swiper.enable();
+    swiper.init();
+  }
+};
+
+window.addEventListener('load', onScreen);
+window.addEventListener('resize', onScreen);
