@@ -62,14 +62,14 @@ const swiper = new Swiper('.advantages__swiper', {
 const onScreen = () => {
   if (mobile.matches) {
     swiper.disable();
-    addClassArray(clones, 'advantages__swiper-slide--none');
+    addClassArray(clones, 'advantages__swiper-slide--hidden');
   }
   if (tablet.matches) {
     swiper.disable();
-    addClassArray(clones, 'advantages__swiper-slide--none');
+    addClassArray(clones, 'advantages__swiper-slide--hidden');
   }
   if (desktop.matches) {
-    resetClassArray(clones, 'advantages__swiper-slide--none');
+    resetClassArray(clones, 'advantages__swiper-slide--hidden');
     swiper.enable();
     swiper.init();
   }

@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
     content="LifeTour website page, where you can check out tours and go on them with the best instructors in Russia">
-  <link rel="preload" href="fonts/Montserrat-VariableFont_wght.woff2" as="font" type="font/woff2"
-    crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+
   <title>LifeTour</title>
   <link rel="stylesheet" href="sass/style.scss">
 </head>
@@ -74,7 +74,7 @@
                   <source type="image/png" media="(min-width: 768px)" srcset="img/hero/hero-tablet-first@1x.jpg 1x,
                 img/hero/hero-tablet-first@2x.jpg 2x">
                   <img class="hero__background-img" src="img/hero/hero-mobile-first@1x.jpg"
-                    srcset="img/hero/hero-mobile-first@2x.jpg 2x" alt="Фотография вершин Кавказа" width="320"
+                    srcset="img/hero/hero-mobile-first@2x.jpg 2x" alt="Вершины Кавказа" width="320"
                     height="568">
                 </picture>
               </div>
@@ -111,7 +111,7 @@
                   <source type="image/png" media="(min-width: 768px)" srcset="img/hero/hero-tablet-second@1x.jpg 1x,
                 img/hero/hero-tablet-second@2x.jpg 2x">
                   <img class="hero__background-img" src="img/hero/hero-mobile-second@1x.jpg"
-                    srcset="img/hero/hero-mobile-second@2x.jpg 2x" alt="Фотография природы Камчатки" width="320"
+                    srcset="img/hero/hero-mobile-second@2x.jpg 2x" alt="Природа Камчатки" width="320"
                     height="568">
                 </picture>
               </div>
@@ -148,7 +148,7 @@
                   <source type="image/png" media="(min-width: 768px)" srcset="img/hero/hero-tablet-third@1x.jpg 1x,
                 img/hero/hero-tablet-third@2x.jpg 2x">
                   <img class="hero__background-img" src="img/hero/hero-mobile-third@1x.jpg"
-                    srcset="img/hero/hero-mobile-third@2x.jpg 2x" alt="Фотография Алтайского края" width="320"
+                    srcset="img/hero/hero-mobile-third@2x.jpg 2x" alt="Пейзаж Алтайского края" width="320"
                     height="568">
                 </picture>
               </div>
@@ -178,7 +178,7 @@
       <section class="tours" id="tours" data-test="tours">
         <div class="tours__wrapper">
           <h2 class="tours__header-small title">Ближайшие туры</h2>
-          <span class="tours__header-big title title--big">Ближайшие туры</span>
+          <span class="tours__header-big title title--big" aria-hidden="true">Ближайшие туры</span>
           <div class="tours__buttons">
             <button class="tours__button button tours__button--prev button--prev" type="button">
               <span class="visually-hidden">Предыдущий слайд</span>
@@ -204,7 +204,7 @@
                     <source type="image/png" media="(min-width: 768px)" srcset="img/tours/tours-first-tablet@1x.jpg 1x,
                     img/tours/tours-first-tablet@2x.jpg 2x">
                     <img class="tours__background-img" src="img/tours/tours-first-mobile@1x.jpg"
-                      srcset="img/tours/tours-first-mobile@2x.jpg 2x" alt="Фотография Эльбруса" width="290"
+                      srcset="img/tours/tours-first-mobile@2x.jpg 2x" alt="Гора Эльбрус" width="290"
                       height="416">
                   </picture>
                 </div>
@@ -248,7 +248,7 @@
                     <source type="image/png" media="(min-width: 768px)" srcset="img/tours/tours-second-tablet@1x.jpg 1x,
                     img/tours/tours-second-tablet@2x.jpg 2x">
                     <img class="tours__background-img" src="img/tours/tours-second-mobile@1x.jpg"
-                      srcset="img/tours/tours-second-mobile@2x.jpg 2x" alt="Фотография Белухи" width="290" height="416">
+                      srcset="img/tours/tours-second-mobile@2x.jpg 2x" alt="Гора Белуха" width="290" height="416">
                   </picture>
                 </div>
                 <div class="tours__info">
@@ -291,7 +291,7 @@
                     <source type="image/png" media="(min-width: 768px)" srcset="img/tours/tours-third-tablet@1x.jpg 1x,
                     img/tours/tours-third-tablet@2x.jpg 2x">
                     <img class="tours__background-img" src="img/tours/tours-third-mobile@1x.jpg"
-                      srcset="img/tours/tours-third-mobile@2x.jpg 2x" alt="Фотография Фишта" width="290" height="416">
+                      srcset="img/tours/tours-third-mobile@2x.jpg 2x" alt="Гора Фишт" width="290" height="416">
                   </picture>
                 </div>
                 <div class="tours__info">
@@ -334,7 +334,7 @@
                     <source type="image/png" media="(min-width: 768px)" srcset="img/tours/tours-fourth-tablet@1x.jpg 1x,
                     img/tours/tours-fourth-tablet@2x.jpg 2x">
                     <img class="tours__background-img" src="img/tours/tours-fourth-mobile@1x.jpg"
-                      srcset="img/tours/tours-fourth-mobile@2x.jpg 2x" alt="Фотография Манарага" width="290"
+                      srcset="img/tours/tours-fourth-mobile@2x.jpg 2x" alt="Гора Манарага" width="290"
                       height="416">
                   </picture>
                 </div>
@@ -374,7 +374,7 @@
         <div class="training__wrapper">
           <div class="training__text-wrapper">
             <h2 class="training__header-small title">Обучение</h2>
-            <span class="training__header-big title title--big">Обучение</span>
+            <span class="training__header-big title title--big" aria-hidden="true">Обучение</span>
             <p>
               Обучение проводится квалифицированными специалистами, за&nbsp;плечами&nbsp;которых десятки пройденных
               маршрутов
@@ -579,7 +579,7 @@
         <div class="about__wrapper">
           <div class="about__content-wrapper">
             <h2 class="about__header-small title">О нас</h2>
-            <span class="about__header-big title title--big">О нас</span>
+            <span class="about__header-big title title--big" aria-hidden="true">О нас</span>
             <div class="about__info">
               <h3>История компании</h3>
               <p>
@@ -604,7 +604,7 @@
         <div class="reviews__wrapper">
           <div class="reviews__header-wrapper">
             <h2 class="reviews__header-small title">Отзывы</h2>
-            <span class="reviews__header-big title title--big">Отзывы</span>
+            <span class="reviews__header-big title title--big" aria-hidden="true">Отзывы</span>
           </div>
           <div class="reviews__buttons">
             <button class="reviews__button button reviews__button--prev button--prev" type="button">
@@ -763,7 +763,7 @@
       <section class="advantages" data-test="adv">
         <div class="advantages__wrapper">
           <h2 class="advantages__header-small title">Преимущества</h2>
-          <span class="advantages__header-big title title--big">Преимущества</span>
+          <span class="advantages__header-big title title--big" aria-hidden="true">Преимущества</span>
           <div class="advantages__swiper swiper">
             <div class="advantages__swiper-wrapper swiper-wrapper">
 
@@ -841,7 +841,7 @@
         <div class="gallery__wrapper">
           <div class="gallery__text-wrapper">
             <h2 class="gallery__header-small title">Фотогалерея</h2>
-            <span class="gallery__header-big title title--big">Фотогалерея</span>
+            <span class="gallery__header-big title title--big" aria-hidden="true">Фотогалерея</span>
             <p>Добавляйте фото в с хэштегом #лайфтур, <span>а также отмечайте нас на фото. Лучшие фотографии</span>
               украсят этот раздел нашего сайта.</p>
           </div>
@@ -993,7 +993,7 @@
         <div class="contacts__wrapper">
           <div class="contacts__text-wrapper">
             <h2 class="contacts__header-small title">Контакты</h2>
-            <span class="contacts__header-big title title--big">Контакты</span>
+            <span class="contacts__header-big title title--big" aria-hidden="true">Контакты</span>
             <p>
               Свяжитесь с нами любым удобным для вас способом
               или приходите к нам в гости. Мы будем рады поделиться
