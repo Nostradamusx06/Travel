@@ -46,7 +46,7 @@
     font-size: $font-line-size-bear;
     font-weight: $extra-bold;
     line-height: $font-line-size-bear;
-
+    word-break: break-word;
     max-width: 258px;
     margin: 0;
     padding-bottom: 20px;
@@ -78,7 +78,7 @@
     max-width: 258px;
     margin: 0 auto;
     padding-bottom: 20px;
-
+    word-break: break-word;
     text-align: center;
 
     @media (min-width: $tablet-width) {
@@ -120,7 +120,7 @@
     flex-direction: row;
 
     width: 960px;
-
+    margin: 0 auto;
     gap: 30px;
   }
 }
@@ -207,7 +207,6 @@
 .form__mail:focus {
   border: 1px solid $color-elephant;
   border-radius: 2px;
-  outline: none;
 
   .form__phone-label,
   .form__mail-label {
@@ -225,8 +224,8 @@
   color: $color-nobel;
 }
 
-.form__mail--error.form__mail:valid,
-.form__phone--error.form__phone:valid {
+.form__error .form__mail:invalid,
+.form__error .form__phone:invalid {
   border-color: $color-torch-red;
   color: $color-nobel;
 }
@@ -249,7 +248,6 @@
 
   color: $color-default-white;
   border: 1px solid transparent;
-  outline-offset: 3px;
   background-color: $color-navy-blue;
 
   @media (min-width: $tablet-width) {
@@ -275,7 +273,6 @@
 
   &:focus {
     color: $color-resolution-blue;
-    outline: none;
     background-color: $color-default-white;
   }
 

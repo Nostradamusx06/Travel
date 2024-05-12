@@ -1,14 +1,16 @@
 .tours {
   position: relative;
 
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  min-height: 416px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 40px;
+    padding-bottom: 29px;
+    min-height: 500px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 110px;
+    padding-bottom: 99px;
   }
 
   &::after {
@@ -48,16 +50,16 @@
 
   max-width: 290px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 20px 0 15px;
 
   @media (min-width: $tablet-width) {
     max-width: 678px;
-    padding: 40px 45px 25px;
+    padding: 40px 45px 16px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1200px;
-    padding: 100px 120px 55px;
+    padding: 100px 120px 44px;
   }
 }
 
@@ -110,10 +112,6 @@
   }
 }
 
-.tours__button--prev .tours__button-img {
-  transform: rotate(180deg);
-}
-
 .tours__button--prev {
   padding-right: 7px;
 }
@@ -154,28 +152,34 @@
 .tours__header-small {
   padding-top: 18px;
   padding-bottom: 40px;
+  word-break: break-word;
 
   @media (min-width: $tablet-width) {
     padding-top: 20px;
     padding-bottom: 35px;
+    max-width: 570px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 23px;
     padding-bottom: 50px;
+    max-width: 870px;
   }
 }
 
 .tours__header-big {
   position: absolute;
   top: 23px;
+  word-break: break-word;
 
   @media (min-width: $tablet-width) {
     top: 106px;
+    max-width: 570px;
   }
 
   @media (min-width: $desktop-width) {
     top: 106px;
+    max-width: 870px;
   }
 }
 
@@ -213,14 +217,19 @@
 
 .tours__place {
   position: relative;
-
-  max-width: 49px;
+  height: fit-content;
+  max-width: 91px;
+  word-break: break-word;
   margin: 0;
   padding: 8px 13px 8px 34px;
 
   text-align: right;
 
   background-color: $color-navy-blue;
+
+  @media (min-width: $tablet-width) {
+    max-width: 125px;
+  }
 
   &::before {
     position: absolute;
@@ -251,7 +260,8 @@
 .tours__nights {
   position: relative;
 
-  max-width: max-content;
+  max-width: 60px;
+  word-break: break-word;
   margin: 0;
 
   &::before {
@@ -291,7 +301,7 @@
   line-height: $font-line-size-rhino;
 
   position: relative;
-
+  word-break: break-word;
   margin: 0;
   padding-top: 16px;
 
@@ -330,7 +340,7 @@
   line-height: $font-line-size-mouse;
 
   position: relative;
-
+  word-break: break-word;
   margin: 0;
   padding-bottom: 4px;
 
@@ -366,6 +376,7 @@
   font-size: $font-line-size-rat;
   font-weight: $bold;
   line-height: $font-line-size-rat;
+  word-break: break-word;
 }
 
 .tours__complexity {
@@ -380,11 +391,10 @@
   position: relative;
 
   display: block;
-
-  width: 217px;
+  word-break: break-word;
+  width: 192px;
   margin: 0 auto;
-  padding: 15px 0;
-  padding-left: 25px;
+  padding: 20px;
 
   text-decoration: none;
   letter-spacing: 0.56px;
@@ -395,38 +405,68 @@
   @media (min-width: $tablet-width) {
     font-size: $font-line-size-fox;
     line-height: $font-line-size-fox;
-
-    padding: 10px 0;
-
+    width: 217px;
     letter-spacing: 0.64px;
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 9px 0;
+  &:hover {
+    color: $color-navy-blue;
+    opacity: 0.1;
+
+    &::after {
+      background-color: $color-navy-blue;
+    }
+  }
+
+  &:focus {
+    color: $color-navy-blue;
+
+    &::after {
+      background-color: $color-navy-blue;
+    }
+  }
+
+  &:active {
+    color: $color-resolution-blue;
+    opacity: inherit;
+
+    &::after {
+      background-color: $color-resolution-blue;
+    }
+  }
+
+  &--disabled {
+    pointer-events: none;
+
+    color: $color-nobel;
+
+    &:focus {
+      color: $color-default-white;
+    }
   }
 
   &::after {
     position: absolute;
     z-index: 1;
-    top: 15px;
-    right: 21px;
+    top: 20px;
+    right: 16px;
 
     width: 14px;
     height: 14px;
 
     content: "";
-
-    background-image: url("/__spritemap#sprite-show-arrow-view");
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: $color-elephant;
+    mask-image: url("/__spritemap#sprite-show-arrow-view");
+    mask-repeat: no-repeat;
+    mask-position: center;
 
     @media (min-width: $tablet-width) {
-      top: 11px;
-      right: -4px;
+      top: 20px;
+      right: 16px;
     }
 
     @media (min-width: $desktop-width) {
-      top: 9px;
+      top: 20px;
     }
   }
 }

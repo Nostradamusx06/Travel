@@ -1,10 +1,9 @@
 .hero__swiper-slide {
   position: relative;
 
-  max-width: -moz-available;
-  max-width: -webkit-fill-available;
-  min-height: 423.8px;
-  padding: 144.5px 0 0 40px;
+  max-width: stretch;
+  min-height: 431.8px;
+  padding: 136.5px 0 0 40px;
 
   &--second {
     min-height: 433px;
@@ -67,19 +66,21 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-
+  max-height: 330px;
   padding-right: 40px;
 
   color: $color-default-white;
 
   @media (min-width: $tablet-width) {
     padding-right: 45px;
+    max-height: 530px;
+    overflow: auto;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
     align-items: normal;
-
+    max-height: 520px;
     padding: 0;
   }
 
@@ -87,19 +88,21 @@
     font-size: $font-line-size-hippo;
     font-weight: $extra-bold;
     line-height: $font-line-size-hippo;
-
-    max-width: 290px;
+    word-break: break-word;
+    width: 290px;
     margin: 0;
     margin-bottom: 15px;
+    padding-top: 8px;
 
     text-align: center;
 
     @media (min-width: $tablet-width) {
       font-size: $font-line-size-blue-whale;
       line-height: $font-line-size-blue-whale;
-
+      width: auto;
       max-width: 678px;
       margin-bottom: 13px;
+      padding: 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -117,7 +120,6 @@
     font-size: 15px;
     font-weight: $regular;
     line-height: $font-line-size-deer;
-
     max-width: 290px;
     margin: 0;
     margin-bottom: 60px;
@@ -159,7 +161,7 @@
   line-height: $font-line-size-fox;
 
   width: 140px;
-  padding: 21px 20px 19px;
+  padding: 20px 19px 18px;
 
   cursor: pointer;
   user-select: none;
@@ -167,8 +169,7 @@
   word-break: break-word;
 
   color: $color-default-white;
-  border: none;
-  outline-offset: 3px;
+  border: 1px solid transparent;
 
   display: inline-flex;
   justify-content: center;
@@ -177,6 +178,38 @@
 
   @media (min-width: $tablet-width) {
     padding: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 19px 18px;
+  }
+
+  &:hover {
+    color: $color-resolution-blue;
+    border: 1px solid $color-resolution-blue;
+    background-color: $color-default-white;
+  }
+
+  &:focus {
+    color: $color-resolution-blue;
+    background-color: $color-default-white;
+  }
+
+  &:active {
+    color: $color-default-white;
+    background-color: $color-resolution-blue;
+  }
+
+  &--disabled {
+    pointer-events: none;
+
+    border: 1px solid $color-nobel;
+    background-color: $color-nobel;
+
+    &:focus {
+      color: $color-default-white;
+      background-color: $color-nobel;
+    }
   }
 }
 
@@ -249,7 +282,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 92px;
+    bottom: 94px;
     left: 1216px;
 
     justify-content: normal;
@@ -273,6 +306,19 @@
   @media (min-width: $tablet-width) {
     width: 18px;
     height: 18px;
+  }
+
+  &:hover {
+    background-color: $color-gainsboro;
+  }
+
+  &:focus {
+    outline: 1px solid rgba($color-default-white, 0.5);
+    outline-offset: 1px;
+  }
+
+  &:active {
+    background-color: rgba($color-default-white, 0.5);
   }
 }
 

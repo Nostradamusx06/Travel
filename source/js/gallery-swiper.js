@@ -13,6 +13,12 @@ import { Navigation } from 'swiper/modules';
       slidesPerView: 'auto',
       slidesPerGroup: 1,
 
+      breakpoints: {
+        1440: {
+          loop: false,
+        },
+      },
+
       navigation: {
         nextEl: '.gallery__button--next',
         prevEl: '.gallery__button--prev',

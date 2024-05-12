@@ -2,7 +2,7 @@
   position: relative;
 
   overflow: hidden;
-
+  min-height: 200px;
   max-width: 320px;
   margin: 0 auto;
   padding: 36px 0 0;
@@ -42,6 +42,8 @@
   width: 320px;
   margin: 0 auto;
   padding: 23px 15px 20px;
+  overflow-y: scroll;
+
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -219,8 +221,6 @@
 
 .reviews__button--prev {
   padding-right: 7px;
-
-  transform: rotate(180deg);
 }
 
 .reviews__img-wrapper {

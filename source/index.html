@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
     content="LifeTour website page, where you can check out tours and go on them with the best instructors in Russia">
-  <link rel="preload" href="fonts/Montserrat-VariableFont_wght.woff2" as="font" type="font/woff2"
-    crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="images/svg+xml" href="favicons/favicon.svg">
+  <link rel="apple-touch-icon" href="favicons/favicon-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/Montserrat-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   <title>LifeTour</title>
   <link rel="stylesheet" href="sass/style.scss">
 </head>
@@ -48,7 +51,8 @@
             </li>
           </ul>
         </nav>
-        <a class="header__phone-link" href="tel:88000000000">8 800 000-00-00</a>
+        <a class="header__phone-link" href="tel:88000000000" aria-label="номер телефона компании LifeTour">8 800
+          000-00-00</a>
       </div>
     </div>
   </header>
@@ -74,8 +78,7 @@
                   <source type="image/png" media="(min-width: 768px)" srcset="img/hero/hero-tablet-first@1x.jpg 1x,
                 img/hero/hero-tablet-first@2x.jpg 2x">
                   <img class="hero__background-img" src="img/hero/hero-mobile-first@1x.jpg"
-                    srcset="img/hero/hero-mobile-first@2x.jpg 2x" alt="Фотография вершин Кавказа" width="320"
-                    height="568">
+                    srcset="img/hero/hero-mobile-first@2x.jpg 2x" alt="Вершины Кавказа" width="320" height="568">
                 </picture>
               </div>
               <div class="hero__info">
@@ -111,8 +114,7 @@
                   <source type="image/png" media="(min-width: 768px)" srcset="img/hero/hero-tablet-second@1x.jpg 1x,
                 img/hero/hero-tablet-second@2x.jpg 2x">
                   <img class="hero__background-img" src="img/hero/hero-mobile-second@1x.jpg"
-                    srcset="img/hero/hero-mobile-second@2x.jpg 2x" alt="Фотография природы Камчатки" width="320"
-                    height="568">
+                    srcset="img/hero/hero-mobile-second@2x.jpg 2x" alt="Природа Камчатки" width="320" height="568">
                 </picture>
               </div>
               <div class="hero__info">
@@ -148,8 +150,7 @@
                   <source type="image/png" media="(min-width: 768px)" srcset="img/hero/hero-tablet-third@1x.jpg 1x,
                 img/hero/hero-tablet-third@2x.jpg 2x">
                   <img class="hero__background-img" src="img/hero/hero-mobile-third@1x.jpg"
-                    srcset="img/hero/hero-mobile-third@2x.jpg 2x" alt="Фотография Алтайского края" width="320"
-                    height="568">
+                    srcset="img/hero/hero-mobile-third@2x.jpg 2x" alt="Пейзаж Алтайского края" width="320" height="568">
                 </picture>
               </div>
               <div class="hero__info">
@@ -178,25 +179,13 @@
       <section class="tours" id="tours" data-test="tours">
         <div class="tours__wrapper">
           <h2 class="tours__header-small title">Ближайшие туры</h2>
-          <span class="tours__header-big title title--big">Ближайшие туры</span>
+          <span class="tours__header-big title title--big" aria-hidden="true">Ближайшие туры</span>
           <div class="tours__buttons">
-            <button class="tours__button button tours__button--prev" type="button" aria-label="Кнопка назад.">
-              <svg class="tours__button-img" width="14" height="9" viewBox="0 0 14 9" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M13.3536 4.85355C13.5488 4.65829 13.5488 4.34171 13.3536 4.14645L10.1716 0.964466C9.97631 0.769204 9.65973 0.769204 9.46447 0.964466C9.2692 1.15973 9.2692 1.47631 9.46447 1.67157L12.2929 4.5L9.46447 7.32843C9.2692 7.52369 9.2692 7.84027 9.46447 8.03553C9.65973 8.2308 9.97631 8.2308 10.1716 8.03553L13.3536 4.85355ZM0 5H13V4H0V5Z"
-                  fill="white" />
-              </svg>
-
+            <button class="tours__button button tours__button--prev button--prev" type="button">
+              <span class="visually-hidden">Предыдущий слайд</span>
             </button>
-            <button class="tours__button button tours__button--next" type="button" aria-label="Кнопка вперед.">
-              <svg class="tours__button-img" width="14" height="9" viewBox="0 0 14 9" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M13.3536 4.85355C13.5488 4.65829 13.5488 4.34171 13.3536 4.14645L10.1716 0.964466C9.97631 0.769204 9.65973 0.769204 9.46447 0.964466C9.2692 1.15973 9.2692 1.47631 9.46447 1.67157L12.2929 4.5L9.46447 7.32843C9.2692 7.52369 9.2692 7.84027 9.46447 8.03553C9.65973 8.2308 9.97631 8.2308 10.1716 8.03553L13.3536 4.85355ZM0 5H13V4H0V5Z"
-                  fill="white" />
-              </svg>
-
+            <button class="tours__button button tours__button--next button--next" type="button">
+              <span class="visually-hidden">Следующий слайд</span>
             </button>
           </div>
           <div class="tours__swiper swiper">
@@ -216,8 +205,7 @@
                     <source type="image/png" media="(min-width: 768px)" srcset="img/tours/tours-first-tablet@1x.jpg 1x,
                     img/tours/tours-first-tablet@2x.jpg 2x">
                     <img class="tours__background-img" src="img/tours/tours-first-mobile@1x.jpg"
-                      srcset="img/tours/tours-first-mobile@2x.jpg 2x" alt="Фотография Эльбруса" width="290"
-                      height="416">
+                      srcset="img/tours/tours-first-mobile@2x.jpg 2x" alt="Гора Эльбрус" width="290" height="416">
                   </picture>
                 </div>
                 <div class="tours__info">
@@ -260,7 +248,7 @@
                     <source type="image/png" media="(min-width: 768px)" srcset="img/tours/tours-second-tablet@1x.jpg 1x,
                     img/tours/tours-second-tablet@2x.jpg 2x">
                     <img class="tours__background-img" src="img/tours/tours-second-mobile@1x.jpg"
-                      srcset="img/tours/tours-second-mobile@2x.jpg 2x" alt="Фотография Белухи" width="290" height="416">
+                      srcset="img/tours/tours-second-mobile@2x.jpg 2x" alt="Гора Белуха" width="290" height="416">
                   </picture>
                 </div>
                 <div class="tours__info">
@@ -303,7 +291,7 @@
                     <source type="image/png" media="(min-width: 768px)" srcset="img/tours/tours-third-tablet@1x.jpg 1x,
                     img/tours/tours-third-tablet@2x.jpg 2x">
                     <img class="tours__background-img" src="img/tours/tours-third-mobile@1x.jpg"
-                      srcset="img/tours/tours-third-mobile@2x.jpg 2x" alt="Фотография Фишта" width="290" height="416">
+                      srcset="img/tours/tours-third-mobile@2x.jpg 2x" alt="Гора Фишт" width="290" height="416">
                   </picture>
                 </div>
                 <div class="tours__info">
@@ -346,8 +334,7 @@
                     <source type="image/png" media="(min-width: 768px)" srcset="img/tours/tours-fourth-tablet@1x.jpg 1x,
                     img/tours/tours-fourth-tablet@2x.jpg 2x">
                     <img class="tours__background-img" src="img/tours/tours-fourth-mobile@1x.jpg"
-                      srcset="img/tours/tours-fourth-mobile@2x.jpg 2x" alt="Фотография Манарага" width="290"
-                      height="416">
+                      srcset="img/tours/tours-fourth-mobile@2x.jpg 2x" alt="Гора Манарага" width="290" height="416">
                   </picture>
                 </div>
                 <div class="tours__info">
@@ -386,7 +373,7 @@
         <div class="training__wrapper">
           <div class="training__text-wrapper">
             <h2 class="training__header-small title">Обучение</h2>
-            <span class="training__header-big title title--big">Обучение</span>
+            <span class="training__header-big title title--big" aria-hidden="true">Обучение</span>
             <p>
               Обучение проводится квалифицированными специалистами, за&nbsp;плечами&nbsp;которых десятки пройденных
               маршрутов
@@ -397,21 +384,11 @@
           <div class="training__instructors">
             <h3 class="training__instructors-header title">Наши инструкторы</h3>
             <div class="training__buttons">
-              <button class="training__button button training__button--prev" type="button" aria-label="Кнопка назад.">
-                <svg class="training__button-img" width="14" height="9" viewBox="0 0 14 9" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M13.3536 4.85355C13.5488 4.65829 13.5488 4.34171 13.3536 4.14645L10.1716 0.964466C9.97631 0.769204 9.65973 0.769204 9.46447 0.964466C9.2692 1.15973 9.2692 1.47631 9.46447 1.67157L12.2929 4.5L9.46447 7.32843C9.2692 7.52369 9.2692 7.84027 9.46447 8.03553C9.65973 8.2308 9.97631 8.2308 10.1716 8.03553L13.3536 4.85355ZM0 5H13V4H0V5Z"
-                    fill="white" />
-                </svg>
+              <button class="training__button button training__button--prev button--prev" type="button">
+                <span class="visually-hidden">Предыдущий слайд</span>
               </button>
-              <button class="training__button button training__button--next" type="button" aria-label="Кнопка вперед.">
-                <svg class="training__button-img" width="14" height="9" viewBox="0 0 14 9" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M13.3536 4.85355C13.5488 4.65829 13.5488 4.34171 13.3536 4.14645L10.1716 0.964466C9.97631 0.769204 9.65973 0.769204 9.46447 0.964466C9.2692 1.15973 9.2692 1.47631 9.46447 1.67157L12.2929 4.5L9.46447 7.32843C9.2692 7.52369 9.2692 7.84027 9.46447 8.03553C9.65973 8.2308 9.97631 8.2308 10.1716 8.03553L13.3536 4.85355ZM0 5H13V4H0V5Z"
-                    fill="white" />
-                </svg>
+              <button class="training__button button training__button--next button--next" type="button">
+                <span class="visually-hidden">Следующий слайд</span>
               </button>
             </div>
             <div class="training__swiper swiper">
@@ -436,7 +413,8 @@
                   <div class="training__info">
                     <div class="training__name-wrapper">
                       <h4>Александр <br> Прокофьев</h4>
-                      <a class="training__link" href="#" aria-label="Страница инструктора в ВК.">
+                      <a class="training__link" href="#">
+                        <span class="visually-hidden">Страница инструктора в ВК.</span>
                       </a>
                     </div>
                     <p>
@@ -467,7 +445,8 @@
                   <div class="training__info">
                     <div class="training__name-wrapper">
                       <h4>Светлана <br> Афиногенова</h4>
-                      <a class="training__link" href="#" aria-label="Страница инструктора в ВК.">
+                      <a class="training__link" href="#">
+                        <span class="visually-hidden">Страница инструктора в ВК.</span>
                       </a>
                     </div>
                     <p>
@@ -499,7 +478,8 @@
                   <div class="training__info">
                     <div class="training__name-wrapper">
                       <h4>Надежда <br> Колесниченко</h4>
-                      <a class="training__link" href="#" aria-label="Страница инструктора в ВК.">
+                      <a class="training__link" href="#">
+                        <span class="visually-hidden">Страница инструктора в ВК.</span>
                       </a>
                     </div>
                     <p>
@@ -531,7 +511,8 @@
                   <div class="training__info">
                     <div class="training__name-wrapper">
                       <h4>Федор <br> Кайгородов</h4>
-                      <a class="training__link" href="#" aria-label="Страница инструктора в ВК.">
+                      <a class="training__link" href="#">
+                        <span class="visually-hidden">Страница инструктора в ВК.</span>
                       </a>
                     </div>
                     <p>
@@ -563,7 +544,8 @@
                   <div class="training__info">
                     <div class="training__name-wrapper">
                       <h4>Даниэль <br> Васнецов</h4>
-                      <a class="training__link" href="#" aria-label="Страница инструктора в ВК.">
+                      <a class="training__link" href="#">
+                        <span class="visually-hidden">Страница инструктора в ВК.</span>
                       </a>
                     </div>
                     <p>
@@ -599,27 +581,9 @@
       </section>
       <section class="about" id="about" data-test="about">
         <div class="about__wrapper">
-          <div class="about__img-wrapper">
-            <picture class="about__picture">
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/about/about-desktop@1x.webp 1x,
-              img/about/about-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/about/about-tablet@1x.webp 1x,
-              img/about/about-tablet@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 320px)" srcset="img/about/about-mobile@1x.webp 1x,
-              img/about/about-mobile@2x.webp 2x">
-
-              <source type="image/png" media="(min-width: 1440px)" srcset="img/about/about-desktop@1x.jpg 1x,
-              img/about/about-desktop@2x.jpg 2x">
-              <source type="image/png" media="(min-width: 768px)" srcset="img/about/about-tablet@1x.jpg 1x,
-              img/about/about-tablet@2x.jpg 2x">
-              <img class="about__picture-img" src="img/about/about-mobile@1x.jpg"
-                srcset="img/about/about-mobile@2x.jpg 2x" alt="Фотография пяти человек в горах" width="350"
-                height="398">
-            </picture>
-          </div>
           <div class="about__content-wrapper">
             <h2 class="about__header-small title">О нас</h2>
-            <span class="about__header-big title title--big">О нас</span>
+            <span class="about__header-big title title--big" aria-hidden="true">О нас</span>
             <div class="about__info">
               <h3>История компании</h3>
               <p>
@@ -644,27 +608,16 @@
         <div class="reviews__wrapper">
           <div class="reviews__header-wrapper">
             <h2 class="reviews__header-small title">Отзывы</h2>
-            <span class="reviews__header-big title title--big">Отзывы</span>
+            <span class="reviews__header-big title title--big" aria-hidden="true">Отзывы</span>
           </div>
           <div class="reviews__buttons">
-            <button class="reviews__button button reviews__button--prev" type="button" aria-label="Кнопка назад.">
-              <svg class="reviews__button-img" width="14" height="9" viewBox="0 0 14 9" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M13.3536 4.85355C13.5488 4.65829 13.5488 4.34171 13.3536 4.14645L10.1716 0.964466C9.97631 0.769204 9.65973 0.769204 9.46447 0.964466C9.2692 1.15973 9.2692 1.47631 9.46447 1.67157L12.2929 4.5L9.46447 7.32843C9.2692 7.52369 9.2692 7.84027 9.46447 8.03553C9.65973 8.2308 9.97631 8.2308 10.1716 8.03553L13.3536 4.85355ZM0 5H13V4H0V5Z"
-                  fill="white" />
-              </svg>
+            <button class="reviews__button button reviews__button--prev button--prev" type="button">
+              <span class="visually-hidden">Предыдущий слайд</span>
             </button>
-            <button class="reviews__button button reviews__button--next" type="button" aria-label="Кнопка вперед.">
-              <svg class="reviews__button-img" width="14" height="9" viewBox="0 0 14 9" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M13.3536 4.85355C13.5488 4.65829 13.5488 4.34171 13.3536 4.14645L10.1716 0.964466C9.97631 0.769204 9.65973 0.769204 9.46447 0.964466C9.2692 1.15973 9.2692 1.47631 9.46447 1.67157L12.2929 4.5L9.46447 7.32843C9.2692 7.52369 9.2692 7.84027 9.46447 8.03553C9.65973 8.2308 9.97631 8.2308 10.1716 8.03553L13.3536 4.85355ZM0 5H13V4H0V5Z"
-                  fill="white" />
-              </svg>
+            <button class="reviews__button button reviews__button--next button--next" type="button">
+              <span class="visually-hidden">Следующий слайд</span>
             </button>
           </div>
-
           <div class="reviews__swiper swiper">
             <div class="reviews__swiper-wrapper swiper-wrapper">
 
@@ -814,7 +767,7 @@
       <section class="advantages" data-test="adv">
         <div class="advantages__wrapper">
           <h2 class="advantages__header-small title">Преимущества</h2>
-          <span class="advantages__header-big title title--big">Преимущества</span>
+          <span class="advantages__header-big title title--big" aria-hidden="true">Преимущества</span>
           <div class="advantages__swiper swiper">
             <div class="advantages__swiper-wrapper swiper-wrapper">
 
@@ -877,22 +830,11 @@
             </div>
           </div>
           <div class="advantages__buttons">
-            <button class="advantages__button button advantages__button--prev" type="button" aria-label="Кнопка назад.">
-              <svg class="advantages__button-img" width="14" height="9" viewBox="0 0 14 9" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M13.3536 4.85355C13.5488 4.65829 13.5488 4.34171 13.3536 4.14645L10.1716 0.964466C9.97631 0.769204 9.65973 0.769204 9.46447 0.964466C9.2692 1.15973 9.2692 1.47631 9.46447 1.67157L12.2929 4.5L9.46447 7.32843C9.2692 7.52369 9.2692 7.84027 9.46447 8.03553C9.65973 8.2308 9.97631 8.2308 10.1716 8.03553L13.3536 4.85355ZM0 5H13V4H0V5Z"
-                  fill="white" />
-              </svg>
+            <button class="advantages__button button advantages__button--prev button--prev" type="button">
+              <span class="visually-hidden">Предыдущий слайд</span>
             </button>
-            <button class="advantages__button button advantages__button--next" type="button"
-              aria-label="Кнопка вперед.">
-              <svg class="advantages__button-img" width="14" height="9" viewBox="0 0 14 9" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M13.3536 4.85355C13.5488 4.65829 13.5488 4.34171 13.3536 4.14645L10.1716 0.964466C9.97631 0.769204 9.65973 0.769204 9.46447 0.964466C9.2692 1.15973 9.2692 1.47631 9.46447 1.67157L12.2929 4.5L9.46447 7.32843C9.2692 7.52369 9.2692 7.84027 9.46447 8.03553C9.65973 8.2308 9.97631 8.2308 10.1716 8.03553L13.3536 4.85355ZM0 5H13V4H0V5Z"
-                  fill="white" />
-              </svg>
+            <button class="advantages__button button advantages__button--next button--next" type="button">
+              <span class="visually-hidden">Следующий слайд</span>
             </button>
           </div>
         </div>
@@ -903,26 +845,16 @@
         <div class="gallery__wrapper">
           <div class="gallery__text-wrapper">
             <h2 class="gallery__header-small title">Фотогалерея</h2>
-            <span class="gallery__header-big title title--big">Фотогалерея</span>
+            <span class="gallery__header-big title title--big" aria-hidden="true">Фотогалерея</span>
             <p>Добавляйте фото в с хэштегом #лайфтур, <span>а также отмечайте нас на фото. Лучшие фотографии</span>
               украсят этот раздел нашего сайта.</p>
           </div>
           <div class="gallery__buttons">
-            <button class="gallery__button button gallery__button--prev" type="button" aria-label="Кнопка назад.">
-              <svg class="gallery__button-img" width="14" height="9" viewBox="0 0 14 9" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M13.3536 4.85355C13.5488 4.65829 13.5488 4.34171 13.3536 4.14645L10.1716 0.964466C9.97631 0.769204 9.65973 0.769204 9.46447 0.964466C9.2692 1.15973 9.2692 1.47631 9.46447 1.67157L12.2929 4.5L9.46447 7.32843C9.2692 7.52369 9.2692 7.84027 9.46447 8.03553C9.65973 8.2308 9.97631 8.2308 10.1716 8.03553L13.3536 4.85355ZM0 5H13V4H0V5Z"
-                  fill="white" />
-              </svg>
+            <button class="gallery__button button gallery__button--prev button--prev" type="button">
+              <span class="visually-hidden">Предыдущий слайд</span>
             </button>
-            <button class="gallery__button button gallery__button--next" type="button" aria-label="Кнопка вперед.">
-              <svg class="gallery__button-img" width="14" height="9" viewBox="0 0 14 9" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M13.3536 4.85355C13.5488 4.65829 13.5488 4.34171 13.3536 4.14645L10.1716 0.964466C9.97631 0.769204 9.65973 0.769204 9.46447 0.964466C9.2692 1.15973 9.2692 1.47631 9.46447 1.67157L12.2929 4.5L9.46447 7.32843C9.2692 7.52369 9.2692 7.84027 9.46447 8.03553C9.65973 8.2308 9.97631 8.2308 10.1716 8.03553L13.3536 4.85355ZM0 5H13V4H0V5Z"
-                  fill="white" />
-              </svg>
+            <button class="gallery__button button gallery__button--next button--next" type="button">
+              <span class="visually-hidden">Следующий слайд</span>
             </button>
           </div>
           <div class="gallery__swiper swiper">
@@ -943,7 +875,7 @@
               img/gallery/gallery-tablet-1@2x.jpg 2x">
                     <img class="gallery__picture-img" src="img/gallery/gallery-mobile-1@1x.jpg"
                       srcset="img/gallery/gallery-mobile-1@2x.jpg 2x" alt="Фотография человека на фоне гор." width="158"
-                      height="266" loading="lazy">
+                      height="266">
                   </picture>
                 </div>
               </div>
@@ -963,7 +895,7 @@
                 img/gallery/gallery-tablet-2.1@2x.jpg 2x">
                     <img class="gallery__picture-img gallery__picture-img--dinner"
                       src="img/gallery/gallery-mobile-2.1@1x.jpg" srcset="img/gallery/gallery-mobile-2.1@2x.jpg 2x"
-                      alt="Фотография людей у костра." width="157" height="135" loading="lazy">
+                      alt="Фотография людей у костра." width="157" height="135">
                   </picture>
                 </div>
                 <div class="gallery__picture">
@@ -981,7 +913,7 @@
                   img/gallery/gallery-tablet-2.2@2x.jpg 2x">
                     <img class="gallery__picture-img" src="img/gallery/gallery-mobile-2.2@1x.jpg"
                       srcset="img/gallery/gallery-mobile-2.2@2x.jpg 2x" alt="Фотография компаса в руке." width="157"
-                      height="125" loading="lazy">
+                      height="125">
                   </picture>
                 </div>
               </div>
@@ -997,7 +929,7 @@
                   img/gallery/gallery-desktop-3@2x.jpg 2x">
                     <img class="gallery__picture-img gallery__picture-img--mountain"
                       src="img/gallery/gallery-tablet-3@1x.jpg" srcset="img/gallery/gallery-tablet-3@2x.jpg 2x"
-                      alt="Фотография людей идущих в сторону горы." width="158" height="266" loading="lazy">
+                      alt="Фотография людей идущих в сторону горы." width="158" height="266">
                   </picture>
                 </div>
               </div>
@@ -1008,7 +940,7 @@
                 img/gallery/gallery-desktop-4.1@2x.webp 2x">
                     <img class="gallery__picture-img gallery__picture-img--winter"
                       src="img/gallery/gallery-desktop-4.1@1x.jpg" srcset="img/gallery/gallery-desktop-4.1@2x.jpg 2x"
-                      alt="Фотография людей идущих по снегу к горе" width="157" height="134" loading="lazy">
+                      alt="Фотография людей идущих по снегу к горе" width="157" height="134">
                   </picture>
                 </div>
                 <div class="gallery__picture">
@@ -1017,7 +949,7 @@
                   img/gallery/gallery-desktop-4.2@2x.webp 2x">
                     <img class="gallery__picture-img gallery__picture-img--tent"
                       src="img/gallery/gallery-desktop-4.2@1x.jpg" srcset="img/gallery/gallery-desktop-4.2@2x.jpg 2x"
-                      alt="Фотография палатки под ночным небом" width="157" height="125" loading="lazy">
+                      alt="Фотография палатки под ночным небом" width="157" height="125">
                   </picture>
                 </div>
               </div>
@@ -1028,7 +960,7 @@
                   img/gallery/gallery-desktop-5@2x.webp 2x">
                     <img class="gallery__picture-img gallery__picture-img--campfire"
                       src="img/gallery/gallery-desktop-5@1x.jpg" srcset="img/gallery/gallery-desktop-5@2x.jpg 2x"
-                      alt="Фотография двух человек разводящих костёр" width="158" height="266" loading="lazy">
+                      alt="Фотография двух человек разводящих костёр" width="158" height="266">
                   </picture>
                 </div>
               </div>
@@ -1043,10 +975,14 @@
           <p>Заполните форму и наш оператор свяжется<br> с вами для консультации.</p>
           <form class="form__wrapper" action="https://echo.htmlacademy.ru" autocomplete="on" method="post">
 
-            <input class="form__phone" id="phone" type="tel" name="phone" maxlength="18" placeholder=" " required>
+            <input class="form__phone" id="phone" type="tel" name="phone" minlength="5" maxlength="18"
+              title="Введите от 5 до 18 символов. Буквы запрещены." placeholder=" " pattern="[^a-zA-Zа-яА-ЯёЁ]{5,}$"
+              required>
             <label class="form__phone-label" for="phone">Телефон</label>
 
-            <input class="form__mail" id="mail" type="text" name="email" placeholder=" " required>
+            <input class="form__mail" id="mail" type="text" name="email" minlength="5" title="Пример: somone@example.ru"
+              placeholder=" " pattern="[a-zA-Zа-яА-ЯёЁ0-9._%+\-]+@[a-zA-Zа-яА-ЯёЁ0-9.\-]+\.[a-zA-Zа-яА-ЯёЁ]{2,}$"
+              required>
             <label class="form__mail-label" for="mail">Email</label>
 
             <button class="form__button" type="submit">Отправить</button>
@@ -1061,7 +997,7 @@
         <div class="contacts__wrapper">
           <div class="contacts__text-wrapper">
             <h2 class="contacts__header-small title">Контакты</h2>
-            <span class="contacts__header-big title title--big">Контакты</span>
+            <span class="contacts__header-big title title--big" aria-hidden="true">Контакты</span>
             <p>
               Свяжитесь с нами любым удобным для вас способом
               или приходите к нам в гости. Мы будем рады поделиться
@@ -1095,7 +1031,7 @@
             <source type="image/png" media="(min-width: 768px)" srcset="img/map/map-tablet@1x.jpg 1x,
             img/map/map-tablet@2x.jpg 2x">
             <img class="contacts__picture-img" src="img/map/map-mobile@1x.jpg" srcset="img/map/map-mobile@2x.jpg 2x"
-              alt="Местоположение офиса компании LifeTour." width="320" height="343" loading="lazy">
+              alt="Местоположение офиса компании LifeTour." width="320" height="343">
           </picture>
         </div>
       </section>
@@ -1126,7 +1062,8 @@
                 <a class="footer__link" href="#contacts">Контакты</a>
               </li>
             </ul>
-            <a class="footer__phone-link" href="tel:88007253232">8 800 725-32-32</a>
+            <a class="footer__phone-link" href="tel:88007253232" aria-label="номер телефона компании LifeTour">8 800
+              725-32-32</a>
           </div>
           <ul class="footer__social-list">
             <li class="footer__social-item">

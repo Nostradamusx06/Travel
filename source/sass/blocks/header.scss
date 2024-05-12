@@ -50,7 +50,7 @@
   font-size: $font-line-size-rat;
   font-weight: $semi-bold;
   line-height: $font-line-size-rabbit;
-
+  word-break: break-word;
   padding: 12px 0 13px 30px;
 
   text-decoration: none;
@@ -70,6 +70,28 @@
 
     min-width: 156px;
     padding: 24px 24px 24px 30px;
+  }
+
+  &:hover {
+    color: rgba($color-default-white, 0.5);
+  }
+
+  &:focus {
+    color: $color-elephant;
+  }
+
+  &:active {
+    color: $color-resolution-blue;
+  }
+
+  &--disabled {
+    pointer-events: none;
+
+    color: $color-nobel;
+
+    &:focus {
+      color: $color-nobel;
+    }
   }
 }
 
