@@ -1,14 +1,14 @@
 .tours {
   position: relative;
 
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 40px;
+    padding-bottom: 29px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 110px;
+    padding-bottom: 99px;
   }
 
   &::after {
@@ -22,7 +22,7 @@
 
     content: "";
 
-    background-image: image-set(url("../img/tours/background-clouds-mobile@1x.webp") type("image/webp") 1x, url("../img/tours/background-clouds-mobile@2x.webp") type("image/webp") 2x, url("../img/tours/background-clouds-mobile@1x.png") 1x, url("../img/tours/background-clouds-mobile@2x.png") 2x,);
+    background-image: image-set(url("../img/tours/background-clouds-mobile@1x.webp") type("image/webp") 1x, url("../img/tours/background-clouds-mobile@2x.webp") type("image/webp") 2x, url("../img/tours/background-clouds-mobile@1x.png") 1x, url("../img/tours/background-clouds-mobile@2x.png") 2x, );
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
@@ -33,12 +33,12 @@
       width: 602px;
       height: 1630px;
 
-      background-image: image-set(url("../img/tours/background-clouds-tablet@1x.webp") type("image/webp") 1x, url("../img/tours/background-clouds-tablet@2x.webp") type("image/webp") 2x, url("../img/tours/background-clouds-tablet@1x.png") 1x, url("../img/tours/background-clouds-tablet@2x.png") 2x,);
+      background-image: image-set(url("../img/tours/background-clouds-tablet@1x.webp") type("image/webp") 1x, url("../img/tours/background-clouds-tablet@2x.webp") type("image/webp") 2x, url("../img/tours/background-clouds-tablet@1x.png") 1x, url("../img/tours/background-clouds-tablet@2x.png") 2x, );
     }
 
     @media (min-width: $desktop-width) {
       bottom: -681px;
-      background-image: image-set(url("../img/tours/background-clouds-desktop@1x.webp") type("image/webp") 1x, url("../img/tours/background-clouds-desktop@2x.webp") type("image/webp") 2x, url("../img/tours/background-clouds-desktop@1x.png") 1x, url("../img/tours/background-clouds-desktop@2x.png") 2x,);
+      background-image: image-set(url("../img/tours/background-clouds-desktop@1x.webp") type("image/webp") 1x, url("../img/tours/background-clouds-desktop@2x.webp") type("image/webp") 2x, url("../img/tours/background-clouds-desktop@1x.png") 1x, url("../img/tours/background-clouds-desktop@2x.png") 2x, );
     }
   }
 }
@@ -48,16 +48,16 @@
 
   max-width: 290px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 20px 0 15px;
 
   @media (min-width: $tablet-width) {
     max-width: 678px;
-    padding: 40px 45px 25px;
+    padding: 40px 45px 16px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1200px;
-    padding: 100px 120px 55px;
+    padding: 100px 120px 44px;
   }
 }
 
@@ -377,10 +377,9 @@
 
   display: block;
 
-  width: 217px;
+  width: 192px;
   margin: 0 auto;
-  padding: 15px 0;
-  padding-left: 25px;
+  padding: 20px;
 
   text-decoration: none;
   letter-spacing: 0.56px;
@@ -391,38 +390,68 @@
   @media (min-width: $tablet-width) {
     font-size: $font-line-size-fox;
     line-height: $font-line-size-fox;
-
-    padding: 10px 0;
-
+    width: 217px;
     letter-spacing: 0.64px;
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 9px 0;
+  &:hover {
+    color: $color-navy-blue;
+    opacity: 0.1;
+
+    &::after {
+      background-color: $color-navy-blue;
+    }
+  }
+
+  &:focus {
+    color: $color-navy-blue;
+
+    &::after {
+      background-color: $color-navy-blue;
+    }
+  }
+
+  &:active {
+    color: $color-resolution-blue;
+    opacity: inherit;
+
+    &::after {
+      background-color: $color-resolution-blue;
+    }
+  }
+
+  &--disabled {
+    pointer-events: none;
+
+    color: $color-nobel;
+
+    &:focus {
+      color: $color-default-white;
+    }
   }
 
   &::after {
     position: absolute;
     z-index: 1;
-    top: 15px;
-    right: 21px;
+    top: 20px;
+    right: 16px;
 
     width: 14px;
     height: 14px;
 
     content: "";
-
-    background-image: url("/__spritemap#sprite-show-arrow-view");
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: $color-elephant;
+    mask-image: url("/__spritemap#sprite-show-arrow-view");
+    mask-repeat: no-repeat;
+    mask-position: center;
 
     @media (min-width: $tablet-width) {
-      top: 11px;
-      right: -4px;
+      top: 20px;
+      right: 16px;
     }
 
     @media (min-width: $desktop-width) {
-      top: 9px;
+      top: 20px;
     }
   }
 }

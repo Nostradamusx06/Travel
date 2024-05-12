@@ -71,6 +71,28 @@
     min-width: 156px;
     padding: 24px 24px 24px 30px;
   }
+
+  &:hover {
+   color: rgba($color-default-white, 0.5);
+  }
+
+  &:focus {
+   color: $color-elephant;
+  }
+
+  &:active {
+    color: $color-resolution-blue;
+  }
+
+  &--disabled {
+    pointer-events: none;
+
+    color: $color-nobel;
+
+    &:focus {
+      color: $color-nobel;
+    }
+  }
 }
 
 .header--nojs .header__menu-toggle {

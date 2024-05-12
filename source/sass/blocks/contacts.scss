@@ -7,6 +7,7 @@
   max-width: 320px;
   margin: 0 auto;
   padding-bottom: 19px;
+  color: $color-elephant;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
@@ -166,6 +167,35 @@
 
   &--address::before {
     background-image: url("/__spritemap#sprite-pin-contacts-view");
+  }
+}
+
+.contacts__item--phone,
+.contacts__item--mail {
+  .contacts__description {
+    &:hover {
+      color: $color-navy-blue;
+      opacity: 0.5;
+    }
+
+    &:focus {
+      color: $color-navy-blue;
+    }
+
+    &:active {
+      color: $color-resolution-blue;
+      opacity: inherit;
+    }
+
+    &--disabled {
+      pointer-events: none;
+
+      color: $color-nobel;
+
+      &:focus {
+        color: $color-default-white;
+      }
+    }
   }
 }
 
