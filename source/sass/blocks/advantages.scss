@@ -3,7 +3,7 @@
   max-width: 290px;
   margin: 0 auto;
   padding: 36px 15px 0;
-min-height: 300px;
+  min-height: 300px;
   color: $color-elephant;
 
   @media (min-width: $tablet-width) {
@@ -162,7 +162,6 @@ min-height: 300px;
 
     position: relative;
     left: -156px;
-
   }
 
   &::before {

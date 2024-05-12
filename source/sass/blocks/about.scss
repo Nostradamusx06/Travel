@@ -4,18 +4,18 @@
   background-repeat: no-repeat;
   background-image:
     image-set(url("../img/about/about-mobile@2x.webp") type("image/webp") 2x,
-      url("../img/about/about-mobile@1x.webp") type("image/webp") 1x,
-      url("../img/about/about-mobile@2x.jpg") type("image/jpg") 2x,
-      url("../img/about/about-mobile@1x.jpg") type("image/jpg") 1x);
+    url("../img/about/about-mobile@1x.webp") type("image/webp") 1x,
+    url("../img/about/about-mobile@2x.jpg") type("image/jpg") 2x,
+    url("../img/about/about-mobile@1x.jpg") type("image/jpg") 1x);
 
   @media (min-width: $tablet-width) {
     min-height: 300px;
     background-position: left 174px;
     background-image:
       image-set(url("../img/about/about-tablet@2x.webp") type("image/webp") 2x,
-        url("../img/about/about-tablet@1x.webp") type("image/webp") 1x,
-        url("../img/about/about-tablet@2x.jpg") type("image/jpg") 2x,
-        url("../img/about/about-tablet@1x.jpg") type("image/jpg") 1x);
+      url("../img/about/about-tablet@1x.webp") type("image/webp") 1x,
+      url("../img/about/about-tablet@2x.jpg") type("image/jpg") 2x,
+      url("../img/about/about-tablet@1x.jpg") type("image/jpg") 1x);
   }
 
   @media (min-width: $desktop-width) {
@@ -24,9 +24,9 @@
     padding-bottom: 149px;
     background-image:
       image-set(url("../img/about/about-desktop@2x.webp") type("image/webp") 2x,
-        url("../img/about/about-desktop@1x.webp") type("image/webp") 1x,
-        url("../img/about/about-desktop@2x.jpg") type("image/jpg") 2x,
-        url("../img/about/about-desktop@1x.jpg") type("image/jpg") 1x);
+      url("../img/about/about-desktop@1x.webp") type("image/webp") 1x,
+      url("../img/about/about-desktop@2x.jpg") type("image/jpg") 2x,
+      url("../img/about/about-desktop@1x.jpg") type("image/jpg") 1x);
   }
 }
 
