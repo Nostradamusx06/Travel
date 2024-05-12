@@ -4,17 +4,19 @@
   max-width: 320px;
   margin: 0 auto;
   padding: 36px 0 3px;
-
+  min-height: 250px;
   color: $color-elephant;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
     padding-top: 60px;
+    min-height: 380px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1440px;
     padding-top: 123px;
+    min-height: 450px;
   }
 }
 
@@ -189,7 +191,7 @@
     font-size: $font-line-size-mouse;
     font-weight: $regular;
     line-height: $font-line-size-wolf;
-
+    word-break: break-word;
     margin: 0;
     padding-top: 27px;
 
@@ -230,6 +232,17 @@
 
   @media (min-width: $desktop-width) {
     top: 105px;
+  }
+}
+
+.gallery__header-small {
+
+  @media (min-width: $tablet-width) {
+    max-width: 570px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: max-content;
   }
 }
 

@@ -46,7 +46,7 @@
     font-size: $font-line-size-bear;
     font-weight: $extra-bold;
     line-height: $font-line-size-bear;
-
+    word-break: break-word;
     max-width: 258px;
     margin: 0;
     padding-bottom: 20px;
@@ -78,7 +78,7 @@
     max-width: 258px;
     margin: 0 auto;
     padding-bottom: 20px;
-
+    word-break: break-word;
     text-align: center;
 
     @media (min-width: $tablet-width) {
@@ -120,7 +120,7 @@
     flex-direction: row;
 
     width: 960px;
-
+    margin: 0 auto;
     gap: 30px;
   }
 }

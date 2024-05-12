@@ -50,7 +50,7 @@
   font-size: $font-line-size-rat;
   font-weight: $semi-bold;
   line-height: $font-line-size-rabbit;
-
+  word-break: break-word;
   padding: 12px 0 13px 30px;
 
   text-decoration: none;
@@ -73,11 +73,11 @@
   }
 
   &:hover {
-   color: rgba($color-default-white, 0.5);
+    color: rgba($color-default-white, 0.5);
   }
 
   &:focus {
-   color: $color-elephant;
+    color: $color-elephant;
   }
 
   &:active {

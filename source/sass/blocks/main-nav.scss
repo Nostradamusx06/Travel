@@ -13,10 +13,9 @@
   left: 0;
 
   display: none;
-
-  // width: -moz-available;
-  // width: -webkit-fill-available;
-  width: fill-available;
+  word-break: break-word;
+  flex-wrap: wrap;
+  width: stretch;
   min-height: 215px;
   margin: 0;
   padding: 26px 0 31px;
@@ -47,7 +46,7 @@
     padding: 0;
     padding-bottom: 3px;
     padding-left: 61px;
-    gap: 0 3px;
+    gap: 3px;
   }
 }
 

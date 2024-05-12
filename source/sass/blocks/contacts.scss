@@ -8,10 +8,12 @@
   margin: 0 auto;
   padding-bottom: 19px;
   color: $color-elephant;
+  min-height: 380px;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
     padding-bottom: 39px;
+    min-height: 450px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,6 +22,7 @@
 
     max-width: 1200px;
     padding: 123px 120px 60px;
+    min-height: 380px;
   }
 }
 
@@ -41,7 +44,7 @@
     font-size: $font-line-size-rabbit;
     font-weight: $regular;
     line-height: $font-line-size-deer;
-
+    word-break: break-word;
     max-width: 268px;
     margin: 0;
     padding-bottom: 30px;
@@ -70,6 +73,7 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 23px;
+    max-width: 490px;
   }
 }
 
@@ -93,7 +97,7 @@
   margin: 0;
   padding: 0;
   padding-left: 32px;
-
+  flex-wrap: wrap;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
@@ -170,32 +174,30 @@
   }
 }
 
-.contacts__item--phone,
-.contacts__item--mail {
-  .contacts__description {
-    &:hover {
-      color: $color-navy-blue;
-      opacity: 0.5;
-    }
+.contacts__item--phone .contacts__description,
+.contacts__item--mail .contacts__description {
+  &:hover {
+    color: $color-navy-blue;
+    opacity: 0.5;
+  }
 
-    &:focus {
-      color: $color-navy-blue;
-    }
+  &:focus {
+    color: $color-navy-blue;
+  }
 
-    &:active {
-      color: $color-resolution-blue;
-      opacity: inherit;
-    }
+  &:active {
+    color: $color-resolution-blue;
+    opacity: inherit;
+  }
 
-    &--disabled {
-      pointer-events: none;
+  &--disabled {
+    pointer-events: none;
 
-      color: $color-nobel;
+    color: $color-nobel;
+  }
 
-      &:focus {
-        color: $color-default-white;
-      }
-    }
+  &--disabled:focus {
+    color: $color-default-white;
   }
 }
 
@@ -203,7 +205,7 @@
   font-size: $font-line-size-rabbit;
   font-weight: $semi-bold;
   line-height: $font-line-size-rabbit;
-
+  word-break: break-word;
   margin: 0;
   padding-bottom: 8px;
 
@@ -230,7 +232,7 @@
   margin: 0;
 
   text-decoration: none;
-
+  word-break: break-word;
   color: inherit;
 
   @media (min-width: $tablet-width) {

@@ -2,7 +2,7 @@
   position: relative;
 
   overflow: hidden;
-
+  min-height: 200px;
   max-width: 320px;
   margin: 0 auto;
   padding: 36px 0 0;
@@ -30,7 +30,7 @@
 
       content: "";
 
-      background-image: image-set(url("../img/reviews/clouds-left@1x.webp") type("image/webp") 1x, url("../img/reviews/clouds-left@2x.webp") type("image/webp") 2x, url("../img/reviews/clouds-left@1x.png") 1x, url("../img/reviews/clouds-left@2x.png") 2x,);
+      background-image: image-set(url("../img/reviews/clouds-left@1x.webp") type("image/webp") 1x, url("../img/reviews/clouds-left@2x.webp") type("image/webp") 2x, url("../img/reviews/clouds-left@1x.png") 1x, url("../img/reviews/clouds-left@2x.png") 2x, );
       background-repeat: no-repeat;
       background-position: left;
       background-size: contain;
@@ -42,6 +42,8 @@
   width: 320px;
   margin: 0 auto;
   padding: 23px 15px 20px;
+  overflow-y: scroll;
+
 
   @media (min-width: $tablet-width) {
     width: 768px;

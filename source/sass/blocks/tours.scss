@@ -2,9 +2,11 @@
   position: relative;
 
   padding-bottom: 10px;
+  min-height: 416px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 29px;
+    min-height: 500px;
   }
 
   @media (min-width: $desktop-width) {
@@ -150,28 +152,34 @@
 .tours__header-small {
   padding-top: 18px;
   padding-bottom: 40px;
+  word-break: break-word;
 
   @media (min-width: $tablet-width) {
     padding-top: 20px;
     padding-bottom: 35px;
+    max-width: 570px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 23px;
     padding-bottom: 50px;
+    max-width: 870px;
   }
 }
 
 .tours__header-big {
   position: absolute;
   top: 23px;
+  word-break: break-word;
 
   @media (min-width: $tablet-width) {
     top: 106px;
+    max-width: 570px;
   }
 
   @media (min-width: $desktop-width) {
     top: 106px;
+    max-width: 870px;
   }
 }
 
@@ -209,14 +217,19 @@
 
 .tours__place {
   position: relative;
-
-  max-width: 49px;
+  height: fit-content;
+  max-width: 91px;
+  word-break: break-word;
   margin: 0;
   padding: 8px 13px 8px 34px;
 
   text-align: right;
 
   background-color: $color-navy-blue;
+
+  @media (min-width: $tablet-width) {
+    max-width: 125px;
+  }
 
   &::before {
     position: absolute;
@@ -247,7 +260,8 @@
 .tours__nights {
   position: relative;
 
-  max-width: max-content;
+  max-width: 60px;
+  word-break: break-word;
   margin: 0;
 
   &::before {
@@ -287,7 +301,7 @@
   line-height: $font-line-size-rhino;
 
   position: relative;
-
+  word-break: break-word;
   margin: 0;
   padding-top: 16px;
 
@@ -326,7 +340,7 @@
   line-height: $font-line-size-mouse;
 
   position: relative;
-
+  word-break: break-word;
   margin: 0;
   padding-bottom: 4px;
 
@@ -362,6 +376,7 @@
   font-size: $font-line-size-rat;
   font-weight: $bold;
   line-height: $font-line-size-rat;
+  word-break: break-word;
 }
 
 .tours__complexity {
@@ -376,7 +391,7 @@
   position: relative;
 
   display: block;
-
+  word-break: break-word;
   width: 192px;
   margin: 0 auto;
   padding: 20px;

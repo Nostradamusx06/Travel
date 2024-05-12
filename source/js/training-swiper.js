@@ -4,7 +4,6 @@ import { Navigation } from 'swiper/modules';
 (function () {
   const initTrainingSwiper = () => {
     const swiperTraining = new Swiper('.training__swiper', {
-      autoHeight: true,
       modules: [Navigation],
       speed: 600,
 

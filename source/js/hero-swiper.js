@@ -34,7 +34,7 @@ import 'swiper/css/pagination';
         },
       },
 
-      autoHeight: true,
+      // autoHeight: true,
     });
 
     return swiperHero;
